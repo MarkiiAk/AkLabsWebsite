@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* ====================
+  Reset Default CSS Start
+  ==================== */
+:root {
+  --primary-font: "Outfit";
+  --secondary-font: "Roboto";
+  --primary-color: #bf390b;
+  --secondary-color: #111111;
+  --gradient: linear-gradient(
+    180deg,
+    rgba(170, 170, 170, 0.1) 0%,
+    #cfcfcf 100%
+  );
+  --accent-1: #595959;
+  --accent-2: #a0a0a0;
+  --accent-3: #cdcdcd;
+  --accent-4: #ffddd1;
+  --accent-5: #ebebeb;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+p {
+  font-family: var(--secondary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  background: var(--white);
+}
+
+/*====================
+  Reset Default CSS End
+  ====================*/
+
+/* Support Start */
+
+.support {
+  margin-top: 70px;
+}
+
+.support .contact_cards {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.support .contact_cards {
+  width: 100%;
+}
+
+.support .card {
+  border-radius: 24px;
+  border: 1px solid var(--accent-3);
+  text-align: center;
+  box-shadow: none;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.support .card h3 {
+  text-align: center;
+  font-size: 28px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.support .card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--accent-1);
+}
+
+.support .card a {
+  font-size: 22px;
+  color: var(--secondary-color);
+  font-weight: 500;
+  text-decoration: underline !important;
+  transition: 0.4s;
+}
+
+.support .card a:hover {
+  text-decoration: none !important;
+  color: var(--primary-color);
+}
+
+.support .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.support .icon i {
+  font-size: 36px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 992px) {
+  .support .card {
+    margin-bottom: 20px;
+  }
+
+  .card:nth-child(3) {
+    margin-bottom: 0px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .support .card h3 {
+    font-size: 26px;
+  }
+
+  .support .card a {
+    font-size: 18px;
+  }
+}
+
+/* Support End */
+
+/* Contact Start */
+.map_and_contact_section {
+  margin-top: 70px;
+}
+
+.map_and_contact_wrapper {
+  margin: 0px 60px;
+}
+
+.map_container {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.map_container iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 24px !important;
+}
+
+.contact_section {
+  border-radius: 24px;
+  padding: 40px 140px;
+}
+
+.contact_section h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact_section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: var(--accent-1);
+  text-align: center;
+}
+
+.contact_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_group label {
+  margin-bottom: 5px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.form_group input {
+  font-family: var(--secondary-font);
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+}
+
+.form_group input::placeholder {
+  color: var(--accent-1);
+}
+
+.contact_now_btn {
+  text-align: center;
+  display: inline-block;
+  grid-column: span 2;
+  padding: 14.5px 46px;
+  background: var(--primary-color);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: var(--secondary-font);
+  position: relative;
+  overflow: hidden;
+  transition: color 0.5s ease;
+}
+
+.contact_now_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.contact_now_btn:hover::before {
+  transform: translateX(100%);
+}
+
+.contact_now_btn:hover {
+  color: var(--white);
+}
+
+.contact_now_btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.emailjs_response {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.contact_section {
+  background-image: url(../img/contact/contact-form-bg.webp);
+  /* background-size: 100% 100%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+}
+
+/* Responsive styles for tablets (max-width: 768px) */
+@media (max-width: 992px) {
+  .contact_section {
+    padding: 40px 80px;
+  }
+
+  .map_and_contact_wrapper {
+    margin: 0px 0px;
+  }
+
+  .contact_section h2 {
+    font-size: 34px;
+  }
+
+  .contact_form {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .form_group label {
+    font-size: 18px;
+  }
+
+  .form_group input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .contact_us_btn {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .map_and_contact_section {
+    margin-top: 50px;
+  }
+
+  .contact_section {
+    padding: 40px 60px;
+    border-radius: 20px;
+  }
+
+  .contact_section {
+    object-fit: contain;
+  }
+
+  .contact_form {
+    grid-template-columns: 1fr;
+  }
+
+  .form_group label {
+    font-size: 16px;
+  }
+
+  .form_group input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .contact_us_btn {
+    grid-column: span 1;
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact_section {
+    padding: 40px 30px;
+    border-radius: 20px;
+  }
+}
+
+/* Contact End */

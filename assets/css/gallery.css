@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* ====================
+  Reset Default CSS Start
+  ==================== */
+:root {
+  --primary-font: "Outfit";
+  --secondary-font: "Roboto";
+  --primary-color: #bf390b;
+  --secondary-color: #111111;
+  --gradient: linear-gradient(
+    180deg,
+    rgba(170, 170, 170, 0.1) 0%,
+    #cfcfcf 100%
+  );
+  --accent-1: #595959;
+  --accent-2: #a0a0a0;
+  --accent-3: #cdcdcd;
+  --accent-4: #ffddd1;
+  --accent-5: #ebebeb;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+p {
+  font-family: var(--secondary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  background: var(--white);
+}
+
+/*====================
+  Reset Default CSS End
+  ====================*/
+
+/* Our Gallery Start */
+
+#gallery_wrapper {
+  margin-top: 70px;
+  font-family: var(--primary-font);
+}
+
+#gallery_wrapper .pagination_outer {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+#gallery_wrapper #pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+#gallery_wrapper #pagination li {
+  display: inline;
+}
+
+#gallery_wrapper #pagination li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px !important;
+  float: left;
+}
+
+#gallery_wrapper #pagination li a i {
+  font-size: 24px;
+}
+
+#gallery_wrapper #pagination li .link {
+  width: 40px;
+  height: 40px;
+}
+
+#gallery_wrapper #pagination li .next,
+#gallery_wrapper #pagination li .prev {
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#gallery_wrapper #pagination li .next i {
+  color: var(--primary-color);
+}
+
+#gallery_wrapper #pagination li .disable {
+  color: var(--accent-2);
+  padding: 5px 10px;
+  border: 1px solid var(--accent-2);
+}
+
+#gallery_wrapper #pagination li a {
+  transition: background-color 0.4s;
+}
+
+#gallery_wrapper #pagination li a.active {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+#gallery_wrapper #pagination li a:hover:not(.active) {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+#gallery_wrapper #pagination li a:hover:not(.active) i {
+  color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+  #gallery_wrapper #pagination li .link {
+    width: 34px;
+    height: 34px;
+  }
+
+  #gallery_wrapper #pagination li .next,
+  #gallery_wrapper #pagination li .prev {
+    width: 50px;
+    height: 34px;
+  }
+}
+
+/* Our Gallery End */
