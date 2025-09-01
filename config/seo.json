@@ -4,7 +4,7 @@
   "canonical": "https://ak-labs-website.vercel.app/",
   "robots": "index,follow",
   "themeColor": "#008cff",
-  "icon": "assets/icon/icon.ico",
+  "icon": "https://ak-labs-website.vercel.app/assets/icon/icon.ico",
 
   "og": {
     "type": "website",
@@ -12,11 +12,12 @@
     "title": "AK Labs | Construimos tu mundo digital",
     "description": "Diseñamos páginas web, tiendas en línea y apps a la medida. Diseño profesional, carga rápida y soporte cercano. Cotiza hoy.",
     "url": "https://ak-labs-website.vercel.app/",
-    "image": "assets/img/og-cover.jpg"
+    "image": "https://ak-labs-website.vercel.app/assets/img/og-cover.jpg"
   },
 
   "twitter": {
-    "card": "summary_large_image"
+    "card": "summary_large_image",
+    "image": "https://ak-labs-website.vercel.app/assets/img/og-cover.jpg"
   },
 
   "jsonld": {
