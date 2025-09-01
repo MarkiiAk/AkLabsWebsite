@@ -1,10 +1,20 @@
 {
   "bg": "#0e0f12",
-  "bg-2": "#12141a",
+  "bg-2": "#12141a", 
   "txt": "#e8e9ee",
   "muted": "#9ed4ff",
   "primary": "#008cff",
   "card": "#008cff14",
   "stroke": "#008cff47",
-  "shadow": "0 10px 30px #008cff11"
+  "shadow": "0 10px 30px #008cff11",
+  "bg-degradado-inicio":"#00182c",
+  "bg-degradado-fin":"#12141a",
+  "bg-menu-fijo": "rgba(18,20,26,.5)",
+  "bg-menu-scrolled": "rgba(18,20,26,.85)",
+  "texto-color-menu": "#fff",
+  "hero-gradient-esd":"rgba(0, 42, 255, 0.06)",
+  "hero-gradient-eii":"rgba(255, 255, 255, 0.03)",
+  "hero-linear-gradient-inicio":"rgba(255, 255, 255, 0.02)",
+  "hero-linear-gradient-fin":"rgba(0, 0, 0, 0)",
+  "trust-badges-color": "#d7d9e0"
 }

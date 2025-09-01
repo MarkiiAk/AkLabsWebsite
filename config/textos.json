@@ -61,12 +61,12 @@
       "f3": "Apps"
     },
     "items": [
-      { "etiqueta": "Landing inmobiliaria" },
-      { "etiqueta": "Tienda gourmet" },
-      { "etiqueta": "Panel de reservas" },
-      { "etiqueta": "Sitio corporativo" },
-      { "etiqueta": "Merch oficial" },
-      { "etiqueta": "App de entregas" }
+      { "etiqueta": "Rulan publicidad" },
+      { "etiqueta": "Spa" },
+      { "etiqueta": "Bufete Abogados" },
+      { "etiqueta": "Tienda deportiva online" },
+      { "etiqueta": "Sportsbar" },
+      { "etiqueta": "Agencia de arquitectura" }
     ]
   },
 
@@ -131,6 +131,6 @@
   },
 
   "footer": {
-    "tagline": "© <span id='y'></span> AK Labs - 2025 | markii.candiani@live.com.mx - +52 55-1933-0800"
+    "tagline": "© <span id='y'></span> AK Labs - 2025"
   }
 }

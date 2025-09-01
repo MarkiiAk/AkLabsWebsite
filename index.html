@@ -17,48 +17,46 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container nav-grid">
+      <a href="#top" class="brand" aria-label="Inicio AK Labs">
+        <strong data-text="nombreEmpresa">NombreEmpresa</strong>
+      </a>
 
-<!-- Header -->
-<header class="site-header" id="top">
-  <div class="container nav-grid">
-    <a href="#top" class="brand" aria-label="Inicio AK Labs">
-      <strong data-text="nombreEmpresa">NombreEmpresa</strong>
-    </a>
+      <nav class="nav" aria-label="Principal">
+        <!-- Botón burger -->
+        <button id="burger" class="burger" aria-label="Abrir menú" aria-controls="mobileNav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
 
-    <nav class="nav" aria-label="Principal">
-      <!-- Botón burger -->
-      <button id="burger" class="burger" aria-label="Abrir menú" aria-controls="mobileNav" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+        <!-- Nav de escritorio -->
+        <ul class="nav-list" id="desktopNav">
+          <a href="#inicio" class="nav-link" data-text="nav.menu1">menu1</a>
+          <a href="#servicios" class="nav-link" data-text="nav.menu2">menu2</a>
+          <a href="#proyectos" class="nav-link" data-text="nav.menu3">menu3</a>
+          <a href="#planes" class="nav-link" data-text="nav.menu4">menu4</a>
+          <a href="#faq" class="nav-link" data-text="nav.menu5">menu5</a>
+          <a href="#contacto" class="nav-link btn btn--sm" data-text="nav.botonMenu">botonMenu</a>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      <!-- Nav de escritorio -->
-      <ul class="nav-list" id="desktopNav">
-        <a href="#inicio" class="nav-link" data-text="nav.menu1">menu1</a>
-        <a href="#servicios" class="nav-link" data-text="nav.menu2">menu2</a>
-        <a href="#proyectos" class="nav-link" data-text="nav.menu3">menu3</a>
-        <a href="#planes" class="nav-link" data-text="nav.menu4">menu4</a>
-        <a href="#faq" class="nav-link" data-text="nav.menu5">menu5</a>
-        <a href="#contacto" class="nav-link btn btn--sm" data-text="nav.botonMenu">botonMenu</a>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <!-- Backdrop para el drawer móvil -->
+  <div id="backdrop" class="mobile-backdrop"></div>
 
-<!-- Backdrop para el drawer móvil -->
-<div id="backdrop" class="mobile-backdrop"></div>
-
-<!-- Drawer móvil ultra-glass -->
-<nav id="mobileNav" class="mobile-drawer" aria-label="Navegación móvil" aria-hidden="true" inert>
-  <div class="mobile-inner">
-    <a href="#inicio"     class="m-link" data-text="nav.menu1">menu1</a>
-    <a href="#servicios"  class="m-link" data-text="nav.menu2">menu2</a>
-    <a href="#proyectos"  class="m-link" data-text="nav.menu3">menu3</a>
-    <a href="#planes"     class="m-link" data-text="nav.menu4">menu4</a>
-    <a href="#faq"        class="m-link" data-text="nav.menu5">menu5</a>
-    <a href="#contacto"   class="m-link btn btn--sm" data-text="nav.botonMenu">botonMenu</a>
-  </div>
-</nav>
-
+  <!-- Drawer móvil ultra-glass -->
+  <nav id="mobileNav" class="mobile-drawer" aria-label="Navegación móvil" aria-hidden="true" inert>
+    <div class="mobile-inner">
+      <a href="#inicio"     class="m-link" data-text="nav.menu1">menu1</a>
+      <a href="#servicios"  class="m-link" data-text="nav.menu2">menu2</a>
+      <a href="#proyectos"  class="m-link" data-text="nav.menu3">menu3</a>
+      <a href="#planes"     class="m-link" data-text="nav.menu4">menu4</a>
+      <a href="#faq"        class="m-link" data-text="nav.menu5">menu5</a>
+      <a href="#contacto"   class="m-link btn btn--sm" data-text="nav.botonMenu">botonMenu</a>
+    </div>
+  </nav>
 
   <!-- Hero -->
   <section id="inicio" class="section hero">
@@ -85,11 +83,10 @@
         </ul>
       </div>
 
-      <!-- Collage de pantallas (placeholders) -->
       <div class="hero-mockups reveal" aria-hidden="true">
-        <figure class="mock m1"></figure>
-        <figure class="mock m2"></figure>
-        <figure class="mock m3"></figure>
+        <figure class="mock m1" data-bg="hero.mock1"></figure>
+        <figure class="mock m2" data-bg="hero.mock2"></figure>
+        <figure class="mock m3" data-bg="hero.mock3"></figure>
       </div>
     </div>
     <div class="hero-bg"></div>
@@ -153,23 +150,22 @@
       </header>
 
       <div class="grid portfolio">
-        <!-- Reemplaza backgrounds por imágenes propias -->
-        <a class="folio web card media" href="#" style="--bg:url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop');">
+        <a class="folio web card media" href="https://www.facebook.com/search/top?q=rulan%20publicidad" data-bg="catalogo.proy1">
           <span data-text="portafolio.items.0.etiqueta">etiqueta0</span>
         </a>
-        <a class="folio ecom card media" href="#" style="--bg:url('https://images.unsplash.com/photo-1515165562835-c3b8c8b4aa4e?q=80&w=1200&auto=format&fit=crop');">
+        <a class="folio ecom card media" href="#" data-bg="catalogo.proy2">
           <span data-text="portafolio.items.1.etiqueta">etiqueta1</span>
         </a>
-        <a class="folio app card media" href="#" style="--bg:url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop');">
+        <a class="folio app  card media" href="#" data-bg="catalogo.proy3">
           <span data-text="portafolio.items.2.etiqueta">etiqueta2</span>
         </a>
-        <a class="folio web card media" href="#" style="--bg:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop');">
+        <a class="folio web  card media" href="#" data-bg="catalogo.proy4">
           <span data-text="portafolio.items.3.etiqueta">etiqueta3</span>
         </a>
-        <a class="folio ecom card media" href="#" style="--bg:url('https://images.unsplash.com/photo-1516542076529-1ea3854896e1?q=80&w=1200&auto=format&fit=crop');">
+        <a class="folio ecom card media" href="#" data-bg="catalogo.proy5">
           <span data-text="portafolio.items.4.etiqueta">etiqueta4</span>
         </a>
-        <a class="folio app card media" href="#" style="--bg:url('https://images.unsplash.com/photo-1525182008055-f88b95ff7980?q=80&w=1200&auto=format&fit=crop');">
+        <a class="folio app  card media" href="#" data-bg="catalogo.proy6">
           <span data-text="portafolio.items.5.etiqueta">etiqueta5</span>
         </a>
       </div>
@@ -256,6 +252,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-flex">
       <p data-html="footer.tagline">tagline</p>
@@ -263,170 +260,12 @@
   </footer>
 
   <!-- Boton de scroll hacia arriba  -->
-    <button id="backTop" class="backtop-btn" aria-label="Volver arriba" hidden>
-    <span class="ms" aria-hidden="true">arrow_upward</span>
-    </button>
-  <!-- JS mínimo -->
-<script>
-// año
-$("#y").text(new Date().getFullYear());
+  <button id="backTop" class="backtop-btn" aria-label="Volver arriba" hidden>
+  <span class="ms" aria-hidden="true">arrow_upward</span>
+  </button>
 
-// sticky header + scrollspy
-const header = $(".site-header");
-function onScroll(){
-  $(window).scrollTop() > 10 ? header.addClass("is-scrolled") : header.removeClass("is-scrolled");
-
-  const pos = $(window).scrollTop() + 140;
-  $("section[id]").each(function(){
-    const id = this.id, top = $(this).offset().top, h = $(this).outerHeight();
-    const active = (pos >= top && pos < top + h);
-    const $desk = $(`.nav-list a[href="#${id}"]`);
-    const $mob  = $(`#mobileNav .m-link[href="#${id}"]`);
-    $desk.toggleClass("is-active", active);
-    $mob.toggleClass("is-active", active);
-  });
-}
-$(document).on("scroll", onScroll); onScroll();
-
-// helpers de drawer
-const $html = $("html");
-const $body = $("body");
-const $drawer = $("#mobileNav");
-const $backdrop = $("#backdrop");
-const $burger = $("#burger");
-let lastFocus = null;
-
-function openDrawer(){
-  lastFocus = document.activeElement;
-  $html.addClass("drawer-open");
-  $body.addClass("no-scroll");
-  $drawer.attr({"aria-hidden":"false"}).removeAttr("inert");
-  $burger.attr("aria-expanded","true");
-  // foco al primer link
-  const first = $drawer.find("a,button,[tabindex]:not([tabindex='-1'])").get(0);
-  if(first) first.focus();
-}
-
-function closeDrawer(focusBurger = true){
-  $html.removeClass("drawer-open");
-  $body.removeClass("no-scroll");
-  $drawer.attr({"aria-hidden":"true"}).attr("inert", "");
-  $burger.attr("aria-expanded","false");
-  if(focusBurger && lastFocus) $(lastFocus).focus();
-}
-
-$burger.on("click", function(){
-  if ($html.hasClass("drawer-open")) closeDrawer();
-  else openDrawer();
-});
-$backdrop.on("click", () => closeDrawer());
-
-// trap de teclado básico en el drawer
-$(document).on("keydown", function(e){
-  if(!$html.hasClass("drawer-open")) return;
-  if(e.key === "Escape"){ e.preventDefault(); closeDrawer(); return; }
-  if(e.key !== "Tab") return;
-  const focusables = $drawer.find("a, button, input, [tabindex]:not([tabindex='-1'])").filter(":visible");
-  if(!focusables.length) return;
-  const first = focusables.get(0), last = focusables.get(focusables.length - 1);
-  if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
-  else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
-});
-
-// Cierra el drawer si se pasa a escritorio
-$(window).on("resize", function(){
-  if (window.matchMedia("(min-width: 981px)").matches) closeDrawer(false);
-});
-
-// smooth scroll con offset del header
-function smoothTo(href, closeAfter = false){
-  const $t = $(href);
-  if(!$t.length) return;
-
-  const offset = $(".site-header").outerHeight() + 20;
-  const dest = $t.offset().top - offset;
-  const curr = $(window).scrollTop();
-  const delta = Math.abs(curr - dest);
-
-  // 🔒 NO repetir la animación: si ya estás ahí o es un delta mínimo, no animar
-  if (delta < 4){
-    if (closeAfter) closeDrawer();
-    return;
-  }
-  $("html, body").stop(true).animate({ scrollTop: dest }, 280, "linear", function(){
-    if (closeAfter) closeDrawer();
-  });
-}
-
-// Click en links (desktop + móvil)
-$(document).on("click", '.nav-list a[href^="#"], #mobileNav .m-link[href^="#"]', function(e){
-  const href = this.getAttribute("href");
-  if (!href) return;
-  e.preventDefault();
-  const closeAfter = this.closest("#mobileNav") !== null;
-  smoothTo(href, closeAfter);
-});
-
-// filtros portafolio (igual que tenías)
-$(".filters .chip").on("click", function () {
-  $(".filters .chip").removeClass("is-active"); $(this).addClass("is-active");
-  const f = $(this).data("filter");
-  if (f === "*") { $(".portfolio .folio").show(); return; }
-  $(".portfolio .folio").hide().filter("." + f).fadeIn(500);
-});
-</script>
-
-
-  <script>
-(() => {
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('is-in');
-        io.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.15 });
-
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-})();
-</script>
-<script>
-(() => {
-  const btn = document.getElementById('backTop');
-  if (!btn) return;
-
-  const threshold = () => window.innerHeight; // aparece al pasar 1 pantalla (segunda vista)
-
-  function toggleBtn(){
-    if (window.scrollY >= threshold()){
-      btn.classList.add('is-visible');
-      btn.removeAttribute('hidden');
-    } else {
-      btn.classList.remove('is-visible');
-      btn.setAttribute('hidden', '');
-    }
-  }
-
-  // click → scroll lineal hacia arriba
-  btn.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (window.jQuery){
-      $('html, body').stop(true).animate({ scrollTop: 0 }, 600, 'linear');
-    } else {
-      // fallback lineal
-      const start = window.pageYOffset;
-      const dur = 600; let t0;
-      function step(ts){ if(!t0) t0=ts; const t=Math.min((ts-t0)/dur,1); window.scrollTo(0, start*(1-t)); if(t<1) requestAnimationFrame(step); }
-      requestAnimationFrame(step);
-    }
-  });
-
-  window.addEventListener('scroll', toggleBtn, { passive: true });
-  window.addEventListener('resize', toggleBtn);
-  toggleBtn();
-})();
-</script>
-
+<script src="assets/js/app.js" defer></script>
+<script src="assets/js/reveal.js" defer></script>
+<script src="assets/js/backtop.js" defer></script>
 </body>
 </html>

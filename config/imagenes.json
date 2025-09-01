@@ -4,5 +4,14 @@
     "mock1": "assets/img/home/mock1.png",
     "mock2": "assets/img/home/mock2.png",
     "mock3": "assets/img/home/mock3.png"
-  }
+  },
+  "catalogo":{
+    "proy1": "assets/img/proyectos/proy1.png",
+    "proy2": "https://media.istockphoto.com/id/1975974946/photo/three-senior-black-women-in-a-health-spa.jpg?s=2048x2048&w=is&k=20&c=8vrrIZGLn6bofUuUGvvue1HbZC3zaqZyoDE1FY-cCfw=",
+    "proy3": "https://media.istockphoto.com/id/1927881398/photo/group-of-business-persons-talking-in-the-office.jpg?s=2048x2048&w=is&k=20&c=R-BpbX_SzMA3IvcNN4L789w8XDx7hum4QESOv538Pw8=",
+    "proy4": "https://media.istockphoto.com/id/1341947720/photo/outdoor-shop.jpg?s=2048x2048&w=is&k=20&c=0xJzmQXmXu6i6zGxG1BnFdBuOyiN2xbOG-1EMtH-iQo=",
+    "proy5": "https://media.istockphoto.com/id/509871314/photo/excited-group-of-people-watching-the-game-at-a-bar.jpg?s=2048x2048&w=is&k=20&c=pi1nkdpP4L3p2CZLn52C67kc5m1qXy53o7XpvLDXwFE=",
+    "proy6": "https://media.istockphoto.com/id/2169928754/photo/architectural-and-engineering-concept-collaboration-and-strategy-for-construction-building.jpg?s=2048x2048&w=is&k=20&c=7BmLeRKGEoZEmVer49npkH7Rv-4_Ib-_lYOdW-barq4="
+  },
+  "icono": "assets/img/iconomain.ico"
 }
