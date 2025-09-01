@@ -1,0 +1,15 @@
+# robots.txt para https://ak-labs-website.vercel.app/
+# Política básica: indexar todo el sitio público y evitar que los JSON internos se indexen.
+
+User-agent: *
+Allow: /
+
+# Evita indexar archivos de configuración/recursos internos
+Disallow: /config/
+
+# (opcional) agrega más rutas privadas si las llegas a tener
+# Disallow: /private/
+# Disallow: /tmp/
+
+Sitemap: https://ak-labs-website.vercel.app/sitemap.xml
+Host: ak-labs-website.vercel.app
