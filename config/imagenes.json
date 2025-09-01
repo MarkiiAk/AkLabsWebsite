@@ -1,0 +1,8 @@
+{
+  "logo": "assets/img/logo-aklabs.svg",
+  "hero": {
+    "mock1": "assets/img/home/mock1.png",
+    "mock2": "assets/img/home/mock2.png",
+    "mock3": "assets/img/home/mock3.png"
+  }
+}

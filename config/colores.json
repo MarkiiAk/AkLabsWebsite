@@ -1,0 +1,10 @@
+{
+  "bg": "#0e0f12",
+  "bg-2": "#12141a",
+  "txt": "#e8e9ee",
+  "muted": "#9ed4ff",
+  "primary": "#008cff",
+  "card": "#008cff14",
+  "stroke": "#008cff47",
+  "shadow": "0 10px 30px #008cff11"
+}

@@ -7,6 +7,8 @@
 
   <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="assets/js/bindings.js"></script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> 
@@ -16,63 +18,70 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="site-header" id="top">
-    <div class="container nav-grid">
-      <a href="#top" class="brand" aria-label="Inicio AK Labs">
-        <strong>AK Labs</strong>
-      </a>
+<!-- Header -->
+<header class="site-header" id="top">
+  <div class="container nav-grid">
+    <a href="#top" class="brand" aria-label="Inicio AK Labs">
+      <strong data-text="nombreEmpresa">NombreEmpresa</strong>
+    </a>
 
-      <nav class="nav" aria-label="Principal">
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-list" id="desktopNav">
-          <a href="#inicio" class="nav-link">Inicio</a>
-          <a href="#servicios" class="nav-link">Servicios</a>
-          <a href="#proyectos" class="nav-link">Proyectos</a>
-          <a href="#planes" class="nav-link">Planes</a>
-          <a href="#faq" class="nav-link">FAQ</a>
-          <a href="#contacto" class="nav-link btn btn--sm">Contáctanos</a>
-        </ul>
-      </nav>
-    </div>
+    <nav class="nav" aria-label="Principal">
+      <!-- Botón burger -->
+      <button id="burger" class="burger" aria-label="Abrir menú" aria-controls="mobileNav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-    <!-- Overlay móvil -->
-    <div class="mobile-drawer" id="mobileNav" aria-hidden="true">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#planes">Planes</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contacto" class="btn btn--sm">Contáctanos</a></li>
+      <!-- Nav de escritorio -->
+      <ul class="nav-list" id="desktopNav">
+        <a href="#inicio" class="nav-link" data-text="nav.menu1">menu1</a>
+        <a href="#servicios" class="nav-link" data-text="nav.menu2">menu2</a>
+        <a href="#proyectos" class="nav-link" data-text="nav.menu3">menu3</a>
+        <a href="#planes" class="nav-link" data-text="nav.menu4">menu4</a>
+        <a href="#faq" class="nav-link" data-text="nav.menu5">menu5</a>
+        <a href="#contacto" class="nav-link btn btn--sm" data-text="nav.botonMenu">botonMenu</a>
       </ul>
-    </div>
-    <div class="scrim" id="scrim" aria-hidden="true"></div>
-  </header>
+    </nav>
+  </div>
+</header>
+
+<!-- Backdrop para el drawer móvil -->
+<div id="backdrop" class="mobile-backdrop"></div>
+
+<!-- Drawer móvil ultra-glass -->
+<nav id="mobileNav" class="mobile-drawer" aria-label="Navegación móvil" aria-hidden="true" inert>
+  <div class="mobile-inner">
+    <a href="#inicio"     class="m-link" data-text="nav.menu1">menu1</a>
+    <a href="#servicios"  class="m-link" data-text="nav.menu2">menu2</a>
+    <a href="#proyectos"  class="m-link" data-text="nav.menu3">menu3</a>
+    <a href="#planes"     class="m-link" data-text="nav.menu4">menu4</a>
+    <a href="#faq"        class="m-link" data-text="nav.menu5">menu5</a>
+    <a href="#contacto"   class="m-link btn btn--sm" data-text="nav.botonMenu">botonMenu</a>
+  </div>
+</nav>
+
 
   <!-- Hero -->
   <section id="inicio" class="section hero">
     <div class="container hero-grid">
       <div class="hero-copy">
         <br>
-        <h1 class="reveal reveal-left">AK Labs <br>Construimos tu mundo digital</h1>
+        <h1 class="reveal reveal-left" data-html="hero.tituloHero">tituloHero</h1>
         <p>
-          <p class="reveal reveal-left">Lo resolvemos contigo de principio a fin:</p>
+          <p class="reveal reveal-left" data-text="hero.subtitulo">subtitulo</p>
           <ul class="hero-dots reveal reveal-left">
-            <li>Diseñamos y desarrollamos <strong>páginas web</strong>, <strong>tiendas en línea</strong> y <strong>aplicaciones a la medida</strong>.</li>
-            <li><strong>Diseños profesionales</strong>, <strong>cargas rápidas</strong> y siempre enfocados en <strong>tranformación digital</strong>.</li>
-            <li>Tomamos tu idea, la ordenamos y <strong>la ponemos en línea en pocos días</strong>, con <strong>acompañamiento</strong> cuando lo necesites.</li>
+            <li data-html="hero.bullets.0">bullet1</li>
+            <li data-html="hero.bullets.1">bullet2</li>
+            <li data-html="hero.bullets.2">bullet3</li>
           </ul>
         </p>
         <div class="hero-ctas reveal reveal-left">
-          <a href="#contacto" class="btn">Hablemos de tu proyecto</a>
-          <a href="#proyectos" class="btn btn--ghost">Ver trabajos</a>
+          <a href="#contacto" class="btn" data-text="hero.cta.btnContacto">btnContacto</a>
+          <a href="#proyectos" class="btn btn--ghost" data-text="hero.cta.trabajos">trabajos</a>
         </div>
         <ul class="trust-badges reveal reveal-left">
-          <li>SSL & Hosting incluido</li>
-          <li>Soporte mensual</li>
-          <li>SEO básico</li>
+          <li data-text="hero.destacados.0">destacado0</li>
+          <li data-text="hero.destacados.1">destacado1</li>
+          <li data-text="hero.destacados.2">destacado2</li>
         </ul>
       </div>
 
@@ -90,8 +99,8 @@
   <section id="servicios" class="section">
     <div class="container">
       <header class="section-head">
-        <h2>Servicios</h2>
-        <p>Servicios para impulsar tu presencia digital: contenido, diseño, integraciones y soporte cercano para crecer contigo siempre.</p>
+        <h2 data-text="servicios.tituloServicios">tituloServicios</h2>
+        <p data-text="servicios.subtituloServicios">subtituloServicios</p>
       </header>
 
       <div class="grid cards-4 reveal reveal-left">
@@ -99,32 +108,32 @@
             <div class="card-icn">
                 <span class="ms">language</span> <!-- Páginas web -->
             </div>
-            <h3>Páginas web</h3>
-            <p>Landings, one-page y sitios corporativos ultra rápidos y responsivos.</p>
+            <h3 data-text="servicios.elementos.0.titulo">titulo0</h3>
+            <p data-text="servicios.elementos.0.descripcion">descripcion0</p>
         </article>
 
         <article class="card">
           <div class="card-icn">
             <span class="ms">shopping_bag</span> <!-- Páginas web -->
           </div>
-          <h3>Tiendas en línea</h3>
-          <p>Checkout seguro, catálogos flexibles y analítica para vender más.</p>
+          <h3 data-text="servicios.elementos.1.titulo">titulo1</h3>
+          <p data-text="servicios.elementos.1.descripcion">descripcion1</p>
         </article>
 
         <article class="card">
           <div class="card-icn">
             <span class="ms">fullscreen_portrait</span> <!-- Páginas web -->
           </div>
-          <h3>Apps Web & Móvil</h3>
-          <p>PWAs y apps híbridas con performance de primera.</p>
+          <h3 data-text="servicios.elementos.2.titulo">titulo2</h3>
+          <p data-text="servicios.elementos.2.descripcion">descripcion2</p>
         </article>
 
         <article class="card">
           <div class="card-icn">
             <span class="ms">Settings</span> <!-- Páginas web -->
           </div>
-          <h3>Soporte & SEO básico</h3>
-          <p>Monitoreo, cambios menores y configuración SEO on-page.</p>
+          <h3 data-text="servicios.elementos.3.titulo">titulo3</h3>
+          <p data-text="servicios.elementos.3.descripcion">descripcion3</p>
         </article>
       </div>
     </div>
@@ -134,34 +143,34 @@
   <section id="proyectos" class="section">
     <div class="container reveal reveal-left">
       <header class="section-head">
-        <h2>Proyectos</h2>
+        <h2 data-text="portafolio.titulo">Proyectos</h2>
         <div class="filters" role="tablist" aria-label="Filtros de portafolio">
-          <button class="chip is-active" data-filter="*">Todos</button>
-          <button class="chip" data-filter="web">Web</button>
-          <button class="chip" data-filter="ecom">E-commerce</button>
-          <button class="chip" data-filter="app">Apps</button>
+          <button class="chip is-active" data-filter="*" data-text="portafolio.filtros.todos">todos</button>
+          <button class="chip" data-filter="web" data-text="portafolio.filtros.f1">f1</button>
+          <button class="chip" data-filter="ecom" data-text="portafolio.filtros.f2">f2</button>
+          <button class="chip" data-filter="app" data-text="portafolio.filtros.f3">f3</button>
         </div>
       </header>
 
       <div class="grid portfolio">
         <!-- Reemplaza backgrounds por imágenes propias -->
         <a class="folio web card media" href="#" style="--bg:url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop');">
-          <span>Landing inmobiliaria</span>
+          <span data-text="portafolio.items.0.etiqueta">etiqueta0</span>
         </a>
         <a class="folio ecom card media" href="#" style="--bg:url('https://images.unsplash.com/photo-1515165562835-c3b8c8b4aa4e?q=80&w=1200&auto=format&fit=crop');">
-          <span>Tienda gourmet</span>
+          <span data-text="portafolio.items.1.etiqueta">etiqueta1</span>
         </a>
         <a class="folio app card media" href="#" style="--bg:url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop');">
-          <span>Panel de reservas</span>
+          <span data-text="portafolio.items.2.etiqueta">etiqueta2</span>
         </a>
         <a class="folio web card media" href="#" style="--bg:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop');">
-          <span>Sitio corporativo</span>
+          <span data-text="portafolio.items.3.etiqueta">etiqueta3</span>
         </a>
         <a class="folio ecom card media" href="#" style="--bg:url('https://images.unsplash.com/photo-1516542076529-1ea3854896e1?q=80&w=1200&auto=format&fit=crop');">
-          <span>Merch oficial</span>
+          <span data-text="portafolio.items.4.etiqueta">etiqueta4</span>
         </a>
         <a class="folio app card media" href="#" style="--bg:url('https://images.unsplash.com/photo-1525182008055-f88b95ff7980?q=80&w=1200&auto=format&fit=crop');">
-          <span>App de entregas</span>
+          <span data-text="portafolio.items.5.etiqueta">etiqueta5</span>
         </a>
       </div>
     </div>
@@ -171,34 +180,34 @@
   <section id="planes" class="section">
     <div class="container reveal reveal-left">
       <header class="section-head">
-        <h2>Planes</h2>
-        <p>Arranca con un one-page irresistible. Si quieres, te acompañamos mes a mes.</p>
+        <h2 data-text="planes.titulo">titulo</h2>
+        <p data-text="planes.subtitulo">subtitulo</p>
       </header>
 
       <div class="grid pricing">
         <article class="price card">
-          <h3>One-Page</h3>
-          <p class="price-tag"><span>$</span>3,800 <small>MXN</small></p>
+          <h3 data-text="planes.items.0.nombre">nombre</h3>
+          <p class="price-tag" data-html="planes.items.0.precioHtml">precioHtml</p>
           <ul class="list">
-            <li>Diseño profesional</li>
-            <li>Dominio .com/.com.mx + hosting 1 año</li>
-            <li>SSL + 10 correos</li>
-            <li>SEO básico + ficha en Google</li>
+            <li data-text="planes.items.0.caracteristicas.0">caracteristicas0</li>
+            <li data-text="planes.items.0.caracteristicas.1">caracteristicas1</li>
+            <li data-text="planes.items.0.caracteristicas.2">caracteristicas2</li>
+            <li data-text="planes.items.0.caracteristicas.3">caracteristicas3</li>
           </ul>
-          <a href="#contacto" class="btn btn--ghost">Lo quiero</a>
+          <a href="#contacto" class="btn btn--ghost" data-text="planes.items.0.cta">cta</a>
         </article>
 
         <article class="price card is-popular">
-          <div class="badge">Recomendado</div>
-          <h3>One-Page + Soporte</h3>
-          <p class="price-tag"><span>$</span>3,800 <small>MXN</small> <em>+ $250/mes</em></p>
+          <div class="badge" data-text="planes.items.1.badge">badge</div>
+          <h3 data-text="planes.items.1.nombre">nombre</h3>
+          <p class="price-tag" data-html="planes.items.1.precioHtml">precioHtml</p>
           <ul class="list">
-            <li>Todo lo del One-Page</li>
-            <li>Monitoreo y cambios menores</li>
-            <li>Gestión de correos</li>
-            <li>Renovación anual a $2,000</li>
+            <li data-text="planes.items.1.caracteristicas.0">caracteristicas0</li>
+            <li data-text="planes.items.1.caracteristicas.1">caracteristicas1</li>
+            <li data-text="planes.items.1.caracteristicas.2">caracteristicas2</li>
+            <li data-text="planes.items.1.caracteristicas.3">caracteristicas3</li>
           </ul>
-          <a href="#contacto" class="btn">Contratar</a>
+          <a href="#contacto" class="btn" data-text="planes.items.0.cta">cta</a>
         </article>
       </div>
     </div>
@@ -208,21 +217,21 @@
   <section id="faq" class="section">
     <div class="container">
       <header class="section-head">
-        <h2>Preguntas frecuentes</h2>
+        <h2 data-text="faq.titulo">titulo</h2>
       </header>
 
       <div class="accordion">
         <details open class="reveal reveal-left">
-          <summary>¿En cuánto tiempo entregan?</summary>
-          <p>One-page típico entre 5 y 7 días hábiles con contenido listo.</p>
+          <summary data-text="faq.items.0.q">q0</summary>
+          <p data-text="faq.items.0.a">a0</p>
         </details>
         <details class="reveal reveal-left">
-          <summary>¿Puedo usar mi dominio actual?</summary>
-          <p>Sí. Lo transferimos o apuntamos DNS donde haga falta.</p>
+          <summary data-text="faq.items.1.q">q1</summary>
+          <p data-text="faq.items.1.a">a1</p>
         </details>
         <details class="reveal reveal-left">
-          <summary>¿Qué incluye el soporte mensual?</summary>
-          <p>Monitoreo, ajustes menores de contenido, creación/eliminación de correos y atención básica.</p>
+          <summary data-text="faq.items.2.q">q2</summary>
+          <p data-text="faq.items.2.a">a2</p>
         </details>
       </div>
     </div>
@@ -232,24 +241,24 @@
   <section id="contacto" class="section contact reveal reveal-left">
     <div class="container contact-grid">
       <header class="section-head">
-        <h2>Hablemos</h2>
-        <p>Cuéntanos tu idea y te respondemos hoy mismo, con una propuesta clara y plazos definidos.</p>
+        <h2 data-text="contacto.titulo">titulo</h2>
+        <p data-text="contacto.subtitulo">subtitulo</p>
       </header>
 
       <form class="card form" action="mailto:ventas@aklabs.mx" method="post" enctype="text/plain">
-        <label>Nombre<input type="text" name="nombre" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Mensaje<textarea name="mensaje" rows="4" required></textarea></label>
-        <button class="btn" type="submit">Enviar</button>
+        <label data-html="contacto.formulario.nombre"></label>
+        <label data-html="contacto.formulario.email"></label>
+        <label data-html="contacto.formulario.mensaje"></label>
+        <button class="btn" type="submit" data-text="contacto.formulario.enviar">enviar</button>
         <a class="btn btn--ghost" target="_blank" rel="noopener"
-           href="https://wa.me/5215519330800?text=Hola%20AK%20Labs,%20quiero%20una%20cotizaci%C3%B3n.">WhatsApp</a>
+           href="https://wa.me/5215519330800?text=Hola%20AK%20Labs,%20quiero%20una%20cotizaci%C3%B3n." data-text="contacto.formulario.whatsapp">whatsapp</a>
       </form>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container footer-flex">
-      <p>© <span id="y"></span> AK Labs. Hecho con ♥ en México.</p>
+      <p data-html="footer.tagline">tagline</p>
     </div>
   </footer>
 
@@ -258,49 +267,115 @@
     <span class="ms" aria-hidden="true">arrow_upward</span>
     </button>
   <!-- JS mínimo -->
-  <script>
-    // año
-    $("#y").text(new Date().getFullYear());
+<script>
+// año
+$("#y").text(new Date().getFullYear());
 
-    // menú móvil
-    $(".burger").on("click", function () {
-      const open = $("body").toggleClass("drawer-open").hasClass("drawer-open");
-      $(this).attr("aria-expanded", open);
-      $("#mobileNav, #scrim").attr("aria-hidden", !open);
-    });
-    $("#scrim, #mobileNav a").on("click", () => $(".burger").click());
+// sticky header + scrollspy
+const header = $(".site-header");
+function onScroll(){
+  $(window).scrollTop() > 10 ? header.addClass("is-scrolled") : header.removeClass("is-scrolled");
 
-    // sticky header + sombra al hacer scroll
-    const header = $(".site-header");
-    const onScroll = () => {
-      $(window).scrollTop() > 10 ? header.addClass("is-scrolled") : header.removeClass("is-scrolled");
-      // scrollspy
-      let pos = $(window).scrollTop() + 140;
-      $("section[id]").each(function () {
-        const id = this.id, top = $(this).offset().top, h = $(this).outerHeight();
-        const link = $(`.nav-list a[href="#${id}"]`);
-        (pos >= top && pos < top + h) ? link.addClass("is-active") : link.removeClass("is-active");
-      });
-    };
-    $(document).on("scroll", onScroll); onScroll();
+  const pos = $(window).scrollTop() + 140;
+  $("section[id]").each(function(){
+    const id = this.id, top = $(this).offset().top, h = $(this).outerHeight();
+    const active = (pos >= top && pos < top + h);
+    const $desk = $(`.nav-list a[href="#${id}"]`);
+    const $mob  = $(`#mobileNav .m-link[href="#${id}"]`);
+    $desk.toggleClass("is-active", active);
+    $mob.toggleClass("is-active", active);
+  });
+}
+$(document).on("scroll", onScroll); onScroll();
 
-    // smooth scroll con offset del header
-    $(document).on("click", 'a[href^="#"]', function (e) {
-      const t = $(this.getAttribute("href"));
-      if (!t.length) return;
-      e.preventDefault();
-      const offset = $(".site-header").outerHeight() + 20;
-      $("html, body").animate({ scrollTop: t.offset().top - offset }, 250, 'linear');
-    });
+// helpers de drawer
+const $html = $("html");
+const $body = $("body");
+const $drawer = $("#mobileNav");
+const $backdrop = $("#backdrop");
+const $burger = $("#burger");
+let lastFocus = null;
 
-    // filtros portafolio
-    $(".filters .chip").on("click", function () {
-      $(".filters .chip").removeClass("is-active"); $(this).addClass("is-active");
-      const f = $(this).data("filter");
-      if (f === "*") { $(".portfolio .folio").show(); return; }
-      $(".portfolio .folio").hide().filter("." + f).fadeIn(500);
-    });
-  </script>
+function openDrawer(){
+  lastFocus = document.activeElement;
+  $html.addClass("drawer-open");
+  $body.addClass("no-scroll");
+  $drawer.attr({"aria-hidden":"false"}).removeAttr("inert");
+  $burger.attr("aria-expanded","true");
+  // foco al primer link
+  const first = $drawer.find("a,button,[tabindex]:not([tabindex='-1'])").get(0);
+  if(first) first.focus();
+}
+
+function closeDrawer(focusBurger = true){
+  $html.removeClass("drawer-open");
+  $body.removeClass("no-scroll");
+  $drawer.attr({"aria-hidden":"true"}).attr("inert", "");
+  $burger.attr("aria-expanded","false");
+  if(focusBurger && lastFocus) $(lastFocus).focus();
+}
+
+$burger.on("click", function(){
+  if ($html.hasClass("drawer-open")) closeDrawer();
+  else openDrawer();
+});
+$backdrop.on("click", () => closeDrawer());
+
+// trap de teclado básico en el drawer
+$(document).on("keydown", function(e){
+  if(!$html.hasClass("drawer-open")) return;
+  if(e.key === "Escape"){ e.preventDefault(); closeDrawer(); return; }
+  if(e.key !== "Tab") return;
+  const focusables = $drawer.find("a, button, input, [tabindex]:not([tabindex='-1'])").filter(":visible");
+  if(!focusables.length) return;
+  const first = focusables.get(0), last = focusables.get(focusables.length - 1);
+  if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+  else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+});
+
+// Cierra el drawer si se pasa a escritorio
+$(window).on("resize", function(){
+  if (window.matchMedia("(min-width: 981px)").matches) closeDrawer(false);
+});
+
+// smooth scroll con offset del header
+function smoothTo(href, closeAfter = false){
+  const $t = $(href);
+  if(!$t.length) return;
+
+  const offset = $(".site-header").outerHeight() + 20;
+  const dest = $t.offset().top - offset;
+  const curr = $(window).scrollTop();
+  const delta = Math.abs(curr - dest);
+
+  // 🔒 NO repetir la animación: si ya estás ahí o es un delta mínimo, no animar
+  if (delta < 4){
+    if (closeAfter) closeDrawer();
+    return;
+  }
+  $("html, body").stop(true).animate({ scrollTop: dest }, 280, "linear", function(){
+    if (closeAfter) closeDrawer();
+  });
+}
+
+// Click en links (desktop + móvil)
+$(document).on("click", '.nav-list a[href^="#"], #mobileNav .m-link[href^="#"]', function(e){
+  const href = this.getAttribute("href");
+  if (!href) return;
+  e.preventDefault();
+  const closeAfter = this.closest("#mobileNav") !== null;
+  smoothTo(href, closeAfter);
+});
+
+// filtros portafolio (igual que tenías)
+$(".filters .chip").on("click", function () {
+  $(".filters .chip").removeClass("is-active"); $(this).addClass("is-active");
+  const f = $(this).data("filter");
+  if (f === "*") { $(".portfolio .folio").show(); return; }
+  $(".portfolio .folio").hide().filter("." + f).fadeIn(500);
+});
+</script>
+
 
   <script>
 (() => {

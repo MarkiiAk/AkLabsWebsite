@@ -89,29 +89,8 @@ a{color:inherit;text-decoration:none}
 .btn--ghost{background:transparent;border-color:var(--stroke);color:#fff}
 .btn--sm{padding:8px 12px;border-radius:10px}
 
-/* burger + drawer */
-.burger{display:none;position:relative;width:28px;height:22px;background:none;border:none}
-.burger span{position:absolute;left:0;right:0;height:2px;background:#fff;border-radius:2px;transition:transform .25s, top .25s, opacity .25s}
-.burger span:nth-child(1){top:2px}
-.burger span:nth-child(2){top:10px}
-.burger span:nth-child(3){top:18px}
-.drawer-open .burger span:nth-child(1){top:10px;transform:rotate(45deg)}
-.drawer-open .burger span:nth-child(2){opacity:0}
-.drawer-open .burger span:nth-child(3){top:10px;transform:rotate(-45deg)}
-.mobile-drawer{
-  position:fixed; inset:0 auto 0 0; width:78%; max-width:340px; transform:translateX(-100%);
-  background:#14161c; border-right:1px solid var(--stroke); transition:transform .25s; z-index:60; padding:80px 24px 24px;
-}
-.mobile-drawer ul{display:grid;gap:16px}
-.mobile-drawer a{padding:10px 12px;border-radius:10px;border:1px solid transparent}
-.mobile-drawer a:hover{border-color:var(--stroke)}
-.scrim{position:fixed; inset:0; background:rgba(0,0,0,.4); opacity:0; pointer-events:none; transition:opacity .25s; z-index:55}
-.drawer-open .mobile-drawer{transform:none}
-.drawer-open .scrim{opacity:1; pointer-events:auto}
-
 @media (max-width: 980px){
   .nav-list{display:none}
-  .burger{display:inline-block;margin-left:auto}
 }
 
 /* ====== Hero ====== */
@@ -332,3 +311,70 @@ input:focus, textarea:focus{border-color:var(--primary); box-shadow:0 0 0 3px #0
 
 
 /* Botón volver arriba */ .backtop-btn{ position: fixed; right: 20px; bottom: 24px; width: 48px; height: 48px; border-radius: 999px; display: grid; place-items: center; background: rgba(14,15,18,.92); /* oscuro, como el fondo */ color: var(--txt); border: 1px solid var(--stroke); box-shadow: var(--shadow); z-index: 60; opacity: 0; transform: translateY(8px); pointer-events: none; transition: opacity .25s ease, transform .25s ease, border-color .25s ease; } .backtop-btn.is-visible{ opacity: 1; transform: none; pointer-events: auto; } .backtop-btn:hover{ border-color: var(--primary); } .backtop-btn:active{ transform: scale(.96); } /* por si el usuario prefiere menos movimiento */ @media (prefers-reduced-motion: reduce){ .backtop-btn{ transition: none; } }
+
+/* ===== Ultra-Glass Burger (móvil) ===== */
+.burger{
+  display:none; /* solo móvil */
+  position:relative; width:36px; height:28px;
+  background:none; border:0; padding:0; cursor:pointer;
+  color:inherit;
+}
+.burger span{
+  position:absolute; left:0; right:0; height:2px; background:currentColor; border-radius:2px;
+  transition: transform .28s ease, top .28s ease, opacity .22s ease;
+}
+.burger span:nth-child(1){ top:2px; }
+.burger span:nth-child(2){ top:13px; }
+.burger span:nth-child(3){ top:24px; }
+
+/* estado abierto → X (sin cambiar color) */
+html.drawer-open .burger span:nth-child(1){ top:13px; transform:rotate(45deg); }
+html.drawer-open .burger span:nth-child(2){ opacity:0; }
+html.drawer-open .burger span:nth-child(3){ top:13px; transform:rotate(-45deg); }
+
+@media (max-width: 980px){
+  .burger{ display:block; }
+  .nav-list{ display:none; } /* tu desktop nav ya estaba oculto en móvil */
+}
+
+/* Backdrop */
+.mobile-backdrop{
+  position:fixed; inset:0; z-index:80;
+  background: rgba(6,8,12,.35);
+  backdrop-filter: saturate(120%) blur(4px);
+  opacity:0; pointer-events:none; transition: opacity .25s ease;
+}
+html.drawer-open .mobile-backdrop{ opacity:1; pointer-events:auto; }
+
+/* Drawer */
+.mobile-drawer{
+  position:fixed; top:0; right:0; height:100dvh; width:min(86vw,380px); z-index:90;
+  background: linear-gradient(180deg, rgba(0, 52, 80, 0.75), rgba(0, 52, 80, 0.75));
+  border-left:1px solid var(--stroke);
+  backdrop-filter: var(--blur);
+  box-shadow: var(--shadow);
+  transform: translateX(102%);
+  transition: transform .32s cubic-bezier(.2,.7,.2,1);
+  display:flex; align-items:flex-start;
+}
+html.drawer-open .mobile-drawer{ transform: translateX(0); }
+
+.mobile-inner{
+  width:100%; padding: calc(var(--nav-h) + 14px) 18px 24px;
+  display:grid; gap:8px;
+}
+
+.m-link{
+  display:block; padding:14px 14px; border-radius:12px; border:1px solid transparent;
+  color:inherit; font-weight:600;
+}
+.m-link:hover{ border-color: var(--stroke); }
+.m-link.is-active{ border-color: var(--primary); }
+
+/* Evita scroll del body cuando el drawer está abierto */
+body.no-scroll{ overflow:hidden; }
+
+/* Respeto a usuarios con menos movimiento */
+@media (prefers-reduced-motion: reduce){
+  .burger span, .mobile-backdrop, .mobile-drawer{ transition:none !important; }
+}

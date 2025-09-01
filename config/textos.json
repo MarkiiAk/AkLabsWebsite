@@ -1,0 +1,136 @@
+{
+  "nombreEmpresa": "AK Labs",
+
+  "nav": {
+    "menu1": "Inicio",
+    "menu2": "Servicios",
+    "menu3": "Proyectos",
+    "menu4": "Planes",
+    "menu5": "FAQ",
+    "botonMenu": "Contáctanos"
+  },
+
+  "hero": {
+    "tituloHero": "AK Labs <br>Construimos tu mundo digital",
+    "subtitulo": "Lo resolvemos contigo de principio a fin:",
+    "bullets": [
+      "Diseñamos y desarrollamos <strong>páginas web</strong>, <strong>tiendas en línea</strong> y <strong>aplicaciones a la medida</strong>.",
+      "<strong>Diseños profesionales</strong>, <strong>cargas rápidas</strong> y siempre enfocados en <strong>tranformación digital</strong>.",
+      "Tomamos tu idea, la ordenamos y <strong>la ponemos en línea en pocos días</strong>, con <strong>acompañamiento</strong> cuando lo necesites."
+    ],
+    "cta": {
+      "btnContacto": "Hablemos de tu proyecto",
+      "trabajos": "Ver trabajos"
+    },
+    "destacados": [
+      "SSL & Hosting incluido",
+      "Soporte mensual",
+      "SEO básico"
+    ]
+  },
+
+  "servicios": {
+    "tituloServicios": "Servicios",
+    "subtituloServicios": "Servicios para impulsar tu presencia digital: contenido, diseño, integraciones y soporte cercano para crecer contigo siempre.",
+    "elementos": [
+      {
+        "titulo": "Páginas web",
+        "descripcion": "Landings, one-page y sitios corporativos ultra rápidos y responsivos."
+      },
+      {
+        "titulo": "Tiendas en línea",
+        "descripcion": "Checkout seguro, catálogos flexibles y analítica para vender más."
+      },
+      {
+        "titulo": "Apps Web & Móvil",
+        "descripcion": "PWAs y apps híbridas con performance de primera."
+      },
+      {
+        "titulo": "Soporte & SEO básico",
+        "descripcion": "Monitoreo, cambios menores y configuración SEO on-page."
+      }
+    ]
+  },
+
+  "portafolio": {
+    "titulo": "Proyectos",
+    "filtros": {
+      "todos": "Todos",
+      "f1": "Web",
+      "f2": "E-commerce",
+      "f3": "Apps"
+    },
+    "items": [
+      { "etiqueta": "Landing inmobiliaria" },
+      { "etiqueta": "Tienda gourmet" },
+      { "etiqueta": "Panel de reservas" },
+      { "etiqueta": "Sitio corporativo" },
+      { "etiqueta": "Merch oficial" },
+      { "etiqueta": "App de entregas" }
+    ]
+  },
+
+  "planes": {
+    "titulo": "Planes",
+    "subtitulo": "Arranca con un one-page irresistible. Si quieres, te acompañamos mes a mes.",
+    "items": [
+      {
+        "nombre": "One-Page",
+        "precioHtml": "<span>$</span>3,800 <small>MXN</small>",
+        "caracteristicas": [
+          "Diseño profesional",
+          "Dominio .com/.com.mx + hosting 1 año",
+          "SSL + 10 correos",
+          "SEO básico + ficha en Google"
+        ],
+        "cta": "Lo quiero"
+      },
+      {
+        "badge": "Recomendado",
+        "nombre": "One-Page + Soporte",
+        "precioHtml": "<span>$</span>3,800 <small>MXN</small> <em>+ $250/mes</em>",
+        "caracteristicas": [
+          "Todo lo del One-Page",
+          "Monitoreo y cambios menores",
+          "Gestión de correos",
+          "Renovación anual a $2,000"
+        ],
+        "cta": "Contratar"
+      }
+    ]
+  },
+
+  "faq": {
+    "titulo": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿En cuánto tiempo entregan?",
+        "a": "One-page típico entre 5 y 7 días hábiles con contenido listo."
+      },
+      {
+        "q": "¿Puedo usar mi dominio actual?",
+        "a": "Sí. Lo transferimos o apuntamos DNS donde haga falta."
+      },
+      {
+        "q": "¿Qué incluye el soporte mensual?",
+        "a": "Monitoreo, ajustes menores de contenido, creación/eliminación de correos y atención básica."
+      }
+    ]
+  },
+
+  "contacto": {
+    "titulo": "Hablemos",
+    "subtitulo": "Cuéntanos tu idea y te respondemos hoy mismo, con una propuesta clara y plazos definidos.",
+    "formulario": {
+      "nombre": "Nombre<input type='text' name='nombre' required>",
+      "email": "Email<input type='email' name='email' required>",
+      "mensaje": "Mensaje<textarea name='mensaje' rows='4' required></textarea>",
+      "enviar": "Enviar",
+      "whatsapp": "WhatsApp"
+    }
+  },
+
+  "footer": {
+    "tagline": "© <span id='y'></span> AK Labs - 2025 | markii.candiani@live.com.mx - +52 55-1933-0800"
+  }
+}
