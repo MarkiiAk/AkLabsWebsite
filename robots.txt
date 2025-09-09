@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://tu-dominio.com/sitemap.xml
+
+# Bloquea basura común
+Disallow: /wp-admin/
+Disallow: /cgi-bin/

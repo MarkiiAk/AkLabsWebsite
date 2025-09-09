@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://tu-dominio.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://tu-dominio.com/#servicios</loc><priority>0.8</priority></url>
+  <url><loc>https://tu-dominio.com/#showcase</loc><priority>0.7</priority></url>
+  <url><loc>https://tu-dominio.com/#proceso</loc><priority>0.7</priority></url>
+  <url><loc>https://tu-dominio.com/#precios</loc><priority>0.9</priority></url>
+  <url><loc>https://tu-dominio.com/#faq</loc><priority>0.6</priority></url>
+  <url><loc>https://tu-dominio.com/#contacto</loc><priority>0.9</priority></url>
+</urlset>

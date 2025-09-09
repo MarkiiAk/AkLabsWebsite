@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <!-- Charset + viewport -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Título + descripción (longitud óptima) -->
+  <title>AK Labs: diseño web, e-commerce y desarrollo a medida en México</title>
+  <meta name="description" content="Agencia de producto digital. Landings que convierten, sitios multipágina, tiendas en línea y desarrollo a medida. Performance real, SEO técnico y crecimiento." />
+
+  <!-- Canonical + alternates -->
+  <link rel="canonical" href="https://tu-dominio.com/" />
+  <link rel="alternate" href="https://tu-dominio.com/" hreflang="es-MX" />
+  <link rel="alternate" href="https://tu-dominio.com/" hreflang="es" />
+  <link rel="alternate" href="https://tu-dominio.com/" hreflang="x-default" />
+
+  <!-- Indexing directives -->
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <meta name="googlebot" content="index,follow" />
+  <link rel="sitemap" type="application/xml" href="https://tu-dominio.com/sitemap.xml" />
+  <meta name="theme-color" content="#0b0d14" />
+
+  <!-- Performance: conexiones + fuentes (swap) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS: preload seguro + noscript fallback -->
+  <link rel="preload" href="assets/css/style.css" as="style" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Preload de imágenes críticas -->
+  <link rel="preload" as="image" href="assets/img/hero-bg.jpg" imagesrcset="assets/img/hero-bg.jpg 1x" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/img/logo.png" imagesrcset="assets/img/logo.png 1x" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/logo.svg" sizes="32x32" type="image/png" />
+  <link rel="icon" href="assets/img/logo.svg" sizes="192x192" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:site_name" content="AK Labs" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AK Labs — Diseño web, e-commerce y desarrollo a medida" />
+  <meta property="og:description" content="Diseño y performance pro. One-page, multipágina, tiendas online y consultoría técnica." />
+  <meta property="og:url" content="https://tu-dominio.com/" />
+  <meta property="og:image" content="https://tu-dominio.com/assets/img/og-cover.jpg" />
+  <meta property="og:locale" content="es_MX" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AK Labs — Diseño web, e-commerce y desarrollo a medida" />
+  <meta name="twitter:description" content="Performance real, SEO técnico y escalabilidad." />
+  <meta name="twitter:image" content="https://tu-dominio.com/assets/img/og-cover.jpg" />
+</head>
+
+<body>
+  <!-- Enlace de salto (a11y) -->
+  <a class="sr-only" href="#main">Saltar al contenido</a>
+
+  <!-- Barra de progreso de scroll -->
+  <div id="progressbar" aria-hidden="true"><span class="progress__fill"></span></div>
+
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__ring"></div>
+    <span class="sr-only">Cargando…</span>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav" data-scrolled="false">
+    <div class="nav__inner container">
+      <a href="#home" class="nav__brand" aria-label="AK Labs — Inicio">
+        <img src="assets/img/logo.png" alt="AK Labs" class="logo" width="140" height="28" decoding="async" fetchpriority="high" />
+      </a>
+
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#precios">Paquetes</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto" class="btn btn--primary">Cotiza</a>
+      </nav>
+
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero__bg" role="img" aria-label="Texturas de luz"></div>
+      <div class="hero__inner container">
+        <div class="hero__badge" data-reveal>Soluciones digitales</div>
+
+        <h1 class="hero__title" data-reveal data-reveal-delay="100">
+          <span class="txt-gradient">Productos digitales</span> de élite; diseño impecable
+        </h1>
+
+        <p class="hero__subtitle" data-reveal data-reveal-delay="200">
+          Estrategia, diseño e ingeniería para lanzar y escalar. Sitios, apps y
+          plataformas con experiencia <em>premium</em>, arquitectura sólida y velocidad de entrega.
+        </p>
+
+        <div class="hero__cta" data-reveal data-reveal-delay="300">
+          <a href="#precios" class="btn btn--primary btn--magnetic">Cotiza tu proyecto</a>
+          <a href="#showcase" class="btn btn--ghost">Ver casos</a>
+        </div>
+
+        <!-- halos decor -->
+        <div class="halo halo--1" aria-hidden="true"></div>
+        <div class="halo halo--2" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <h2 class="section__title">Lo que ofrecemos</h2>
+          <p class="section__desc">
+            Desde sitios ultra-eficientes hasta plataformas a la medida. Diseñamos, 
+            construimos y escalamos experiencias digitales con visión de producto.
+          </p>
+        </header>
+
+        <div class="grid grid--features">
+          <article class="card" data-reveal>
+            <h3>Landing / One-Page</h3>
+            <p>Impacto inmediato y conversión. Ideal para lanzamientos y campañas de alto retorno.</p>
+            <p><a href="#precios" class="inline-link">Ver precios de One-Page</a></p>
+          </article>
+
+          <article class="card" data-reveal data-reveal-delay="60">
+            <h3>Multipágina</h3>
+            <p>Arquitectura clara, navegación suave y SEO estratégico para crecer con tu marca.</p>
+            <p><a href="#precios" class="inline-link">Planes multipágina</a></p>
+          </article>
+
+          <article class="card" data-reveal data-reveal-delay="120">
+            <h3>E-commerce</h3>
+            <p>Catálogo, carrito y pagos integrados. Optimizado para vender sin fricción.</p>
+            <p><a href="#precios" class="inline-link">Paquete e-commerce</a></p>
+          </article>
+
+          <article class="card" data-reveal data-reveal-delay="180">
+            <h3>Consultoría & Software</h3>
+            <p>Más allá de web: sistemas a medida, automatización y escalabilidad.</p>
+            <p><a href="#contacto" class="inline-link">Agenda consultoría</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section id="showcase" class="section section--alt">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <h2 class="section__title">Showcase</h2>
+          <p class="section__desc">Selección curada. Efecto tilt y lightbox nativo.</p>
+        </header>
+
+        <div class="grid grid--portfolio">
+          <figure class="work tilt" data-reveal>
+            <a href="https://adastrajuris.com.mx" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/work-1.jpg" 
+                  alt="Proyecto 1: rediseño con énfasis en conversión" 
+                  loading="lazy" width="640" height="480" />
+              <figcaption>Ad Astra Juris</figcaption>
+            </a>
+          </figure>
+          <figure class="work tilt" data-reveal>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/underconstruction.jpg" 
+                  alt="Proyecto 1: rediseño con énfasis en conversión" 
+                  loading="lazy" width="640" height="480" />
+              <figcaption>Under Construction</figcaption>
+            </a>
+          </figure>
+          <figure class="work tilt" data-reveal>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/underconstruction.jpg" 
+                  alt="Proyecto 1: rediseño con énfasis en conversión" 
+                  loading="lazy" width="640" height="480" />
+              <figcaption>Under Construction</figcaption>
+            </a>
+          </figure>
+          <figure class="work tilt" data-reveal>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/underconstruction.jpg" 
+                  alt="Proyecto 1: rediseño con énfasis en conversión" 
+                  loading="lazy" width="640" height="480" />
+              <figcaption>Under Construction</figcaption>
+            </a>
+          </figure>
+        </div>
+      </div>
+
+      <dialog class="lightbox" id="lightbox" aria-label="Vista previa">
+        <button class="lightbox__close" aria-label="Cerrar">×</button>
+        <img src="" alt="Trabajo" />
+        <p class="lightbox__label"></p>
+      </dialog>
+    </section>
+
+    <!-- PROCESO -->
+    <section id="proceso" class="section process-roadmap">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <h2 class="section__title">Proceso</h2>
+          <p class="section__desc">De la idea al impacto real: un roadmap diseñado para crecer sin límites.</p>
+        </header>
+
+        <div class="roadmap">
+          <div class="roadmap__track" aria-hidden="true"></div>
+
+          <ol class="stages" role="list">
+            <li class="stage" data-reveal>
+              <div class="stage__head">
+                <span class="badge">01</span>
+                <span class="pin" aria-hidden="true"></span>
+              </div>
+              <article class="card stage__card tilt">
+                <h3 class="stage__title"><i class="fa-solid fa-magnifying-glass"></i> Discovery & visión</h3>
+                <p>Entendemos tu negocio, mercado y usuarios. Objetivos claros y norte de la estrategia.</p>
+              </article>
+            </li>
+
+            <li class="stage" data-reveal data-reveal-delay="60">
+              <div class="stage__head">
+                <span class="badge">02</span>
+                <span class="pin" aria-hidden="true"></span>
+              </div>
+              <article class="card stage__card tilt">
+                <h3 class="stage__title"><i class="fa-solid fa-object-group"></i> Diseño & arquitectura</h3>
+                <p>Wireframes, sistema de UI y arquitectura pensada para escalar como producto.</p>
+              </article>
+            </li>
+
+            <li class="stage" data-reveal data-reveal-delay="120">
+              <div class="stage__head">
+                <span class="badge">03</span>
+                <span class="pin" aria-hidden="true"></span>
+              </div>
+              <article class="card stage__card tilt">
+                <h3 class="stage__title"><i class="fa-solid fa-code"></i> Desarrollo ágil</h3>
+                <p>Frontend y backend limpios y rápidos. QA multi-device, CI y pruebas reales.</p>
+              </article>
+            </li>
+
+            <li class="stage" data-reveal data-reveal-delay="180">
+              <div class="stage__head">
+                <span class="badge">04</span>
+                <span class="pin" aria-hidden="true"></span>
+              </div>
+              <article class="card stage__card tilt">
+                <h3 class="stage__title"><i class="fa-solid fa-rocket"></i> Deploy & performance</h3>
+                <p>Optimización SEO, seguridad y despliegue sin fricciones. Escalabilidad lista.</p>
+              </article>
+            </li>
+
+            <li class="stage" data-reveal data-reveal-delay="240">
+              <div class="stage__head">
+                <span class="badge">05</span>
+                <span class="pin" aria-hidden="true"></span>
+              </div>
+              <article class="card stage__card tilt">
+                <h3 class="stage__title"><i class="fa-solid fa-chart-line"></i> Iteración & growth</h3>
+                <p>Métricas, A/B testing y roadmap de evolución continua.</p>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section id="precios" class="section section--alt">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <h2 class="section__title">Paquetes</h2>
+          <p class="section__desc">Transparente y sin letra chica. Incluye correos corporativos y opción de mantenimiento mensual.</p>
+        </header>
+
+        <div class="grid grid--pricing">
+          <article class="price" data-reveal>
+            <h3>One-Page</h3>
+            <p class="price__tag">$3,800 MXN</p>
+            <ul class="price__list">
+              <li>Sección única premium con diseño pro</li>
+              <li>3 cuentas de correo corporativo</li>
+              <li>SEO básico y velocidad optimizada</li>
+              <li>Dominio .com.mx incluido (1 año)</li>
+              <li><strong>Mantenimiento opcional: $300 MXN/mes</strong> (4 cambios básicos + soporte)</li>
+            </ul>
+            <a href="#contacto" class="btn btn--primary btn--magnetic">Elegir</a>
+          </article>
+
+          <article class="price price--highlight" data-reveal data-reveal-delay="80">
+            <h3>Multipágina</h3>
+            <p class="price__tag">$5,000 MXN</p>
+            <ul class="price__list">
+              <li>Hasta 5 páginas estratégicas</li>
+              <li>3 cuentas de correo incluidas</li>
+              <li>SEO base para escalar tráfico</li>
+              <li>Soporte técnico incluido</li>
+              <li><strong>Mantenimiento opcional: $600 MXN/mes</strong> (cambios + mejoras continuas)</li>
+            </ul>
+            <a href="#contacto" class="btn btn--primary btn--magnetic">Elegir</a>
+          </article>
+
+          <article class="price" data-reveal data-reveal-delay="160">
+            <h3>E-commerce</h3>
+            <p class="price__tag">$12,000 MXN</p>
+            <ul class="price__list">
+              <li>Catálogo administrable + carrito de compras</li>
+              <li>Pagos integrados y 100% seguros</li>
+              <li>Responsive full en todos los dispositivos</li>
+              <li>Soporte inicial premium</li>
+              <li><strong>Mantenimiento opcional: $1,200 MXN/mes</strong> (optimización + cambios ilimitados básicos)</li>
+            </ul>
+            <a href="#contacto" class="btn btn--primary btn--magnetic">Elegir</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="section">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <h2 class="section__title">Lo que dicen</h2>
+          <p class="section__desc">Casos reales, resultados medibles.</p>
+        </header>
+
+        <div class="slider" data-slider>
+          <button class="slider__btn slider__btn--prev" aria-label="Anterior">‹</button>
+
+          <div class="slider__track">
+            <div class="slide" data-reveal>
+              <blockquote>
+                “En menos de dos semanas el sitio empezó a generar citas de prospectos.
+                El despacho ganó claridad en el mensaje y ahora medimos cada contacto.”
+              </blockquote>
+              <cite>— Lic. Hugo E. González, Socio en Ad Astra Juris</cite>
+            </div>
+
+            <div class="slide" data-reveal data-reveal-delay="80">
+              <blockquote>
+                “La landing de campaña nos dio un CTR 2.1× y bajó el costo por lead 37%.
+                La implementación fue impecable.”
+              </blockquote>
+              <cite>— Sofía M., Marketing en retail moda</cite>
+            </div>
+
+            <div class="slide" data-reveal data-reveal-delay="160">
+              <blockquote>
+                “Nos entregaron una arquitectura clara y un SEO base que por fin posiciona
+                servicios clave. El equipo es serio y muy rápido.”
+              </blockquote>
+              <cite>— Daniel R., Director Operación B2B</cite>
+            </div>
+
+            <div class="slide" data-reveal data-reveal-delay="240">
+              <blockquote>
+                “Checkout sin fricción y velocidad real. Subimos 18% en conversión el primer mes
+                solo con performance y UX.”
+              </blockquote>
+              <cite>— Laura C., E-commerce Manager</cite>
+            </div>
+          </div>
+
+          <button class="slider__btn slider__btn--next" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section--alt">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <h2 class="section__title">FAQ</h2>
+          <p class="section__desc">Preguntas frecuentes que nos hacen clientes antes de dar el paso.</p>
+        </header>
+
+        <div class="faq">
+          <details class="reveal" data-reveal>
+            <summary>¿Qué cambios están incluidos?</summary>
+            <p>
+              En el plan One-Page puedes ajustar textos, imágenes y colores sin costo adicional. 
+              Cambios estructurales o nuevas secciones se cotizan de forma transparente.
+            </p>
+          </details>
+
+          <details class="reveal" data-reveal data-reveal-delay="80">
+            <summary>¿Necesito un hosting especial?</summary>
+            <p>
+              No. Nuestros sitios corren en hosting estándar con buenas prácticas de seguridad y
+              performance. Si lo prefieres, te asesoramos en la contratación del servidor ideal.
+            </p>
+          </details>
+
+          <details class="reveal" data-reveal data-reveal-delay="160">
+            <summary>¿Qué nivel de SEO ofrecen?</summary>
+            <p>
+              Entregamos un SEO técnico base: etiquetas, metadatos, estructura semántica y tiempos
+              de carga optimizados. Si buscas estrategias avanzadas, también ofrecemos planes
+              mensuales de posicionamiento.
+            </p>
+          </details>
+
+          <details class="reveal" data-reveal data-reveal-delay="240">
+            <summary>¿Pueden dar soporte continuo?</summary>
+            <p>
+              Sí. Contamos con planes de mantenimiento mensual (desde $300 MXN) que incluyen cambios
+              menores, monitoreo y soporte técnico para que tu web esté siempre arriba.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <h2 class="section__title">Hablemos</h2>
+          <p class="section__desc">Cuéntanos de tu proyecto y te respondemos hoy.</p>
+        </header>
+
+        <form class="form" id="contactForm" method="POST" action="assets/php/contact.php" novalidate>
+          <!-- Honeypot -->
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none">
+          <!-- (Opcional) CSRF -->
+          <input type="hidden" name="csrf_token" value="" />
+
+          <div class="form__row">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+          </div>
+          <div class="form__row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="tu@correo.com" required />
+          </div>
+          <div class="form__row">
+            <label for="msg">Mensaje</label>
+            <textarea id="msg" name="message" rows="5" placeholder="Cuéntanos en 3-4 líneas" required></textarea>
+          </div>
+          <button class="btn btn--primary btn--magnetic" type="submit">Enviar</button>
+          <p class="form__hint" id="formHint" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> AK Labs — Obsesión por el detalle.</p>
+      <nav class="footer__links" aria-label="Enlaces de pie">
+        <a href="#home">Inicio</a>
+        <a href="#precios">Paquetes</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- FAB “Back to top” -->
+  <button id="backToTop" class="fab fab--top" aria-label="Volver arriba" title="Volver arriba" hidden>
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    <span class="sr-only">Volver arriba</span>
+  </button>
+
+  <!-- FAB de Theme -->
+  <button id="themeFab" class="fab fab--theme" aria-label="Cambiar tema" title="Cambiar tema">
+    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    <span class="sr-only">Cambiar tema</span>
+  </button>
+
+  <!-- Librerías externas (solo notificaciones, si las usas) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js" defer></script>
+
+  <!-- JS principal -->
+  <script src="assets/js/app.js" defer></script>
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"AK Labs",
+    "url":"https://tu-dominio.com/",
+    "logo":"https://tu-dominio.com/assets/img/logo.png",
+    "sameAs":[
+      "https://www.facebook.com/aklabs",
+      "https://www.instagram.com/aklabs",
+      "https://www.linkedin.com/company/aklabs"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: WebSite + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"AK Labs",
+    "url":"https://tu-dominio.com/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://tu-dominio.com/?s={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement": [
+      { "@type":"ListItem","position":1,"name":"Inicio","item":"https://tu-dominio.com/" },
+      { "@type":"ListItem","position":2,"name":"Servicios","item":"https://tu-dominio.com/#servicios" },
+      { "@type":"ListItem","position":3,"name":"Paquetes","item":"https://tu-dominio.com/#precios" },
+      { "@type":"ListItem","position":4,"name":"Contacto","item":"https://tu-dominio.com/#contacto" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"¿Qué cambios están incluidos?","acceptedAnswer":{"@type":"Answer","text":"En One-Page puedes ajustar textos, imágenes y colores sin costo. Estructura o nuevas secciones se cotizan aparte."}},
+      {"@type":"Question","name":"¿Necesito hosting especial?","acceptedAnswer":{"@type":"Answer","text":"No. Trabajamos con hosting estándar siguiendo buenas prácticas de seguridad y performance."}},
+      {"@type":"Question","name":"¿Qué nivel de SEO ofrecen?","acceptedAnswer":{"@type":"Answer","text":"SEO técnico base: metadatos, estructura semántica y tiempos de carga optimizados. También ofrecemos planes mensuales avanzados."}},
+      {"@type":"Question","name":"¿Tienen soporte continuo?","acceptedAnswer":{"@type":"Answer","text":"Sí, con planes de mantenimiento mensual desde $300 MXN: cambios menores, monitoreo y soporte."}}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: ItemList (Paquetes) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Paquetes AK Labs",
+    "itemListElement":[
+      {
+        "@type":"Product",
+        "position":1,
+        "name":"One-Page",
+        "description":"Sección única premium, 3 correos corporativos, SEO básico, dominio .com.mx 1 año.",
+        "brand":{"@type":"Brand","name":"AK Labs"},
+        "offers":{"@type":"Offer","price":"3800","priceCurrency":"MXN","availability":"https://schema.org/InStock","url":"https://tu-dominio.com/#precios"},
+        "additionalProperty":[{"@type":"PropertyValue","name":"Mantenimiento mensual","value":"$300 MXN/mes"}]
+      },
+      {
+        "@type":"Product",
+        "position":2,
+        "name":"Multipágina",
+        "description":"Hasta 5 páginas, 3 correos, SEO base y soporte técnico.",
+        "brand":{"@type":"Brand","name":"AK Labs"},
+        "offers":{"@type":"Offer","price":"5000","priceCurrency":"MXN","availability":"https://schema.org/InStock","url":"https://tu-dominio.com/#precios"},
+        "additionalProperty":[{"@type":"PropertyValue","name":"Mantenimiento mensual","value":"$600 MXN/mes"}]
+      },
+      {
+        "@type":"Product",
+        "position":3,
+        "name":"E-commerce",
+        "description":"Catálogo administrable, carrito y pagos integrados, responsive full.",
+        "brand":{"@type":"Brand","name":"AK Labs"},
+        "offers":{"@type":"Offer","price":"12000","priceCurrency":"MXN","availability":"https://schema.org/InStock","url":"https://tu-dominio.com/#precios"},
+        "additionalProperty":[{"@type":"PropertyValue","name":"Mantenimiento mensual","value":"$1,200 MXN/mes"}]
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Review real -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Review",
+    "itemReviewed":{"@type":"Organization","name":"AK Labs"},
+    "author":{"@type":"Person","name":"Lic. Hugo E. González"},
+    "reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},
+    "reviewBody":"En menos de dos semanas el sitio empezó a generar citas de prospectos. Mensaje claro y medición de cada contacto."
+  }
+  </script>
+
+  <!-- JSON-LD: Service (ejemplo aterrizable) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Landing Page de alto rendimiento",
+    "serviceType":"Web Design",
+    "provider":{"@type":"Organization","name":"AK Labs","url":"https://tu-dominio.com/"},
+    "areaServed":{"@type":"Country","name":"México"},
+    "offers":{"@type":"Offer","priceCurrency":"MXN","price":"3800","url":"https://tu-dominio.com/servicios/landing-page/","availability":"https://schema.org/InStock"},
+    "description":"Landings optimizadas para conversión con SEO técnico y analítica."
+  }
+  </script>
+</body>
+</html>
