@@ -5,7 +5,7 @@
 // ==================================================
 
 // Configuración
-$to      = "tu-correo@tudominio.com"; // <-- cambia esto a tu correo
+$to      = "contacto@aklabs.com.mx"; // <-- cambia esto a tu correo
 $subject = "Nueva cotización desde AK Labs";
 
 // Sanitizar campos
@@ -22,13 +22,13 @@ if ($honey !== "" || empty($name) || !filter_var($email, FILTER_VALIDATE_EMAIL) 
 }
 
 // Construir cuerpo del correo
-$body = "Has recibido una nueva cotización desde el sitio web AK Labs.\n\n";
+$body = "Has recibido una nueva cotizacion desde el sitio web AK Labs.\n\n";
 $body .= "Nombre: $name\n";
 $body .= "Email: $email\n";
 $body .= "Mensaje:\n$message\n";
 
 // Headers
-$headers  = "From: AK Labs <no-reply@tudominio.com>\r\n";
+$headers  = "From: AK Labs <no-reply@aklabs.com.mx>\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 

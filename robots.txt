@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
-Sitemap: https://tu-dominio.com/sitemap.xml
+Sitemap: https://aklabs.com.mx/sitemap.xml
+
 
 # Bloquea basura común
 Disallow: /wp-admin/

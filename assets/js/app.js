@@ -146,36 +146,44 @@ $$('[data-slider]').forEach((slider) => {
 });
 
 // ---------------- Contact form (demo, PHP backend) ----------------
-$('#contactForm')?.addEventListener('submit', (e) => {
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
   e.preventDefault();
+
   const form = e.target;
-  const name = $('#name').value.trim();
-  const email = $('#email').value.trim();
-  const msg = $('#msg').value.trim();
-  const emailOk = /.+@.+\..+/.test(email);
+  const formData = new FormData(form);
 
-  if (!name || !emailOk || msg.length < 10) {
-    alertify.error('Completa nombre, email válido y mensaje (10+ caracteres)');
-    return;
-  }
-
-  // Enviar vía PHP (action en el form apunta a assets/php/contact.php)
-  fetch(form.action, {
-    method: 'POST',
-    body: new FormData(form),
-  })
-    .then((res) => {
-      if (!res.ok) throw new Error('Network error');
-      return res.text();
-    })
-    .then(() => {
-      alertify.success('Cotización enviada ✔️');
-      form.reset();
-    })
-    .catch(() => {
-      alertify.error('Hubo un problema al enviar');
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData
     });
+
+    if (response.ok) {
+      Swal.fire({
+        icon: "success",
+        title: "¡Mensaje enviado!",
+        text: "Gracias por contactarnos, te responderemos en breve.",
+        confirmButtonColor: "#007bff"
+      });
+      form.reset();
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Error al enviar",
+        text: "Intentalo nuevamente, recuerda no usar texto de relleno como 'asdaasd'.",
+        confirmButtonColor: "#d33"
+      });
+    }
+  } catch (error) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Algo salió mal. Verifica tu conexión.",
+      confirmButtonColor: "#d33"
+    });
+  }
 });
+
 
 // ---------------- Año dinámico ----------------
 $('#year').textContent = new Date().getFullYear();
