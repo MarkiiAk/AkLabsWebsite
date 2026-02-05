@@ -1101,6 +1101,13 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero__scroll {
+    display: block;
+  }
 }
 
 .scroll-indicator {
@@ -1196,11 +1203,51 @@ a:hover {
 .service-card--featured {
   border-color: var(--fire-orange);
   background: linear-gradient(135deg, rgba(255, 107, 53, 0.05) 0%, rgba(255, 210, 63, 0.05) 100%);
+  box-shadow: 0 0 30px rgba(255, 107, 53, 0.15);
 }
 
 .service-card--enterprise {
   border-color: var(--golden-yellow);
   background: linear-gradient(135deg, rgba(255, 210, 63, 0.05) 0%, rgba(247, 147, 30, 0.05) 100%);
+  box-shadow: 0 0 30px rgba(255, 210, 63, 0.15);
+}
+
+/* Estilos especiales para móvil que reemplazan los badges */
+@media (max-width: 1023px) {
+  .service-card--featured {
+    border-width: 2px;
+    box-shadow: 0 0 40px rgba(255, 107, 53, 0.2), inset 0 1px 0 rgba(255, 107, 53, 0.2);
+    position: relative;
+  }
+  
+  .service-card--featured::before {
+    opacity: 0.08;
+  }
+  
+  .service-card--featured .service-card__title {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .service-card--enterprise {
+    border-width: 2px;
+    box-shadow: 0 0 40px rgba(255, 210, 63, 0.2), inset 0 1px 0 rgba(255, 210, 63, 0.2);
+    position: relative;
+  }
+  
+  .service-card--enterprise::before {
+    opacity: 0.08;
+    background: var(--gradient-secondary);
+  }
+  
+  .service-card--enterprise .service-card__title {
+    background: var(--gradient-secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 .service-card__header {
@@ -1221,10 +1268,18 @@ a:hover {
   font-weight: 600;
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-full);
+  display: none;
 }
 
 .service-card__badge--premium {
   background: var(--gradient-secondary);
+}
+
+/* Solo mostrar badges en desktop */
+@media (min-width: 1024px) {
+  .service-card__badge {
+    display: block;
+  }
 }
 
 .service-icon {
