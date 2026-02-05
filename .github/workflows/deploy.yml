@@ -14,13 +14,23 @@ jobs:
     - name: 🚀 Checkout code
       uses: actions/checkout@v4
       
+    - name: 🧹 Clean FTP Server Directory
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.adastrajuris.com.mx
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /
+        dangerous-clean-slate: true
+        timeout: 60000
+        
     - name: 📂 Deploy to FTP Server
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.adastrajuris.com.mx
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /home/adastraj/public_html_aklabs/
+        server-dir: /
         local-dir: ./
         exclude: |
           **/.git*
