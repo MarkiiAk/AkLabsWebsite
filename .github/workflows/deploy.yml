@@ -1,0 +1,37 @@
+name: Deploy to FTP Server
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 🚀 Checkout code
+      uses: actions/checkout@v4
+      
+    - name: 📂 Deploy to FTP Server
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.adastrajuris.com.mx
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /home/adastraj/public_html_aklabs/
+        local-dir: ./
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.DS_Store
+          **/Thumbs.db
+          **/.github/**
+          **/README.md
+        timeout: 60000
+        log-level: verbose
+        
+    - name: ✅ Deployment Complete
+      run: echo "🎉 Deployment to AK Labs production server completed successfully!"
