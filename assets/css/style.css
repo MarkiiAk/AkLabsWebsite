@@ -296,40 +296,15 @@ a:hover {
 
 /* === CUSTOM CURSOR === */
 .cursor {
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  pointer-events: none;
-  z-index: 9998;
-  transition: transform var(--transition-fast), opacity var(--transition-fast);
+  display: none !important;
 }
 
 .cursor__dot {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background: var(--fire-orange);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: transform var(--transition-fast);
+  display: none !important;
 }
 
 .cursor__circle {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgba(255, 107, 53, 0.3);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform var(--transition-base);
-}
-
-@media (pointer: coarse) {
-  .cursor { display: none; }
+  display: none !important;
 }
 
 /* === SCROLL PROGRESS === */

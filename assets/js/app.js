@@ -90,70 +90,11 @@ class Preloader {
   }
 }
 
-// === CUSTOM CURSOR ===
+// === CUSTOM CURSOR (DISABLED) ===
 class CustomCursor {
   constructor() {
-    this.cursor = $('.cursor');
-    this.dot = $('.cursor__dot');
-    this.circle = $('.cursor__circle');
-    this.isVisible = false;
-    
-    this.init();
-  }
-
-  init() {
-    // Only enable on desktop devices
-    if (window.matchMedia('(pointer: fine)').matches) {
-      this.bindEvents();
-      this.startAnimation();
-    }
-  }
-
-  bindEvents() {
-    document.addEventListener('mousemove', (e) => {
-      AppState.mouseX = e.clientX;
-      AppState.mouseY = e.clientY;
-      
-      if (!this.isVisible) {
-        this.show();
-      }
-    });
-
-    document.addEventListener('mouseenter', () => this.show());
-    document.addEventListener('mouseleave', () => this.hide());
-
-    // Hover effects on interactive elements
-    const interactiveElements = 'a, button, .btn, [role="button"], input, textarea, select';
-    $$(interactiveElements).forEach(el => {
-      el.addEventListener('mouseenter', () => this.setHovered(true));
-      el.addEventListener('mouseleave', () => this.setHovered(false));
-    });
-  }
-
-  startAnimation() {
-    const animate = () => {
-      if (this.isVisible) {
-        this.cursor.style.transform = `translate3d(${AppState.mouseX}px, ${AppState.mouseY}px, 0)`;
-      }
-      requestAnimationFrame(animate);
-    };
-    animate();
-  }
-
-  show() {
-    this.isVisible = true;
-    this.cursor.style.opacity = '1';
-  }
-
-  hide() {
-    this.isVisible = false;
-    this.cursor.style.opacity = '0';
-  }
-
-  setHovered(hovered) {
-    this.circle.style.transform = hovered 
-      ? 'translate(-50%, -50%) scale(1.5)' 
-      : 'translate(-50%, -50%) scale(0)';
+    // Cursor personalizado deshabilitado para mejor usabilidad móvil
+    return;
   }
 }
 
