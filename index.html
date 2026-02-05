@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="es" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Cache Control - Force Fresh Content -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
     
     <!-- SEO Premium -->
     <title>AK Labs — Diseño Web Premium México | Senior Developer 12+ años</title>
@@ -42,6 +47,31 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Cache Busting Script -->
+    <script>
+        // Force cache refresh with timestamp
+        (function() {
+            const timestamp = new Date().getTime();
+            const cssLink = document.querySelector('link[href*="style.css"]');
+            const jsScript = document.querySelector('script[src*="app.js"]');
+            
+            if (cssLink) {
+                cssLink.href = cssLink.href.split('?')[0] + '?v=' + timestamp;
+            }
+            
+            // Update JS src when DOM loads
+            document.addEventListener('DOMContentLoaded', function() {
+                const scripts = document.querySelectorAll('script[src*="app.js"]');
+                scripts.forEach(script => {
+                    const newScript = document.createElement('script');
+                    newScript.src = script.src.split('?')[0] + '?v=' + timestamp;
+                    newScript.defer = script.defer;
+                    script.parentNode.replaceChild(newScript, script);
+                });
+            });
+        })();
+    </script>
     
     <!-- Structured Data -->
     <script type="application/ld+json">
