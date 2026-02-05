@@ -183,8 +183,7 @@ class Navigation {
 
   updateMenuState() {
     this.toggle.setAttribute('aria-expanded', AppState.isMenuOpen);
-    this.menu.style.display = AppState.isMenuOpen ? 'block' : 'none';
-    this.backdrop.classList.toggle('active', AppState.isMenuOpen);
+    this.menu.classList.toggle('menu-active', AppState.isMenuOpen);
     document.body.style.overflow = AppState.isMenuOpen ? 'hidden' : '';
   }
 
