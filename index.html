@@ -1,616 +1,1170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es" data-theme="dark">
 <head>
-  <!-- Charset + viewport -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Title + Description -->
-  <title>Diseño web profesional en México | AK Labs</title>
-  <meta name="description" content="AK Labs crea sitios web modernos, rápidos y optimizados para SEO. Diseño web profesional en México que convierte visitas en clientes.">
-
-  <!-- Canonical + hreflang -->
-  <link rel="canonical" href="https://aklabs.com.mx/" />
-  <link rel="alternate" href="https://aklabs.com.mx/" hreflang="es-MX" />
-  <link rel="alternate" href="https://aklabs.com.mx/" hreflang="es" />
-  <link rel="alternate" href="https://aklabs.com.mx/" hreflang="x-default" />
-
-  <!-- Indexing directives -->
-  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
-  <meta name="googlebot" content="index,follow" />
-  <link rel="sitemap" type="application/xml" href="https://aklabs.com.mx/sitemap.xml" />
-
-  <!-- Theme Color -->
-  <meta name="theme-color" content="#0b0d14" />
-
-  <!-- Performance: conexiones + fuentes -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="preload" href="assets/css/style.css" as="style" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-
-  <!-- Preload de imágenes críticas -->
-  <link rel="preload" as="image" href="assets/img/hero-bg.png" fetchpriority="high" />
-  <link rel="preload" as="image" href="assets/img/logo.png" />
-
-  <!-- Favicons -->
-  <link rel="icon" href="https://aklabs.com.mx/assets/img/logo.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="https://aklabs.com.mx/assets/img/apple-touch-icon.png" />
-
-  <!-- Open Graph -->
-  <meta property="og:site_name" content="AK Labs" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="AK Labs — Diseño web, e-commerce y desarrollo a medida" />
-  <meta property="og:description" content="Landings que convierten, sitios multipágina, tiendas en línea y desarrollo a medida. Performance real, SEO técnico y crecimiento." />
-  <meta property="og:url" content="https://aklabs.com.mx/" />
-  <meta property="og:image" content="https://aklabs.com.mx/assets/img/og-cover.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:locale" content="es_MX" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AK Labs — Diseño web, e-commerce y desarrollo a medida" />
-  <meta name="twitter:description" content="Performance real, SEO técnico y crecimiento." />
-  <meta name="twitter:image" content="https://aklabs.com.mx/assets/img/og-cover.jpg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Premium -->
+    <title>AK Labs — Diseño Web Premium México | Senior Developer 12+ años</title>
+    <meta name="description" content="Senior Software Engineer con 12 años transformando negocios mexicanos. Sitios web premium, e-commerce y desarrollo a medida que realmente convierten.">
+    
+    <!-- Canonical & Language -->
+    <link rel="canonical" href="https://aklabs.com.mx/">
+    <link rel="alternate" hreflang="es-MX" href="https://aklabs.com.mx/">
+    <link rel="alternate" hreflang="es" href="https://aklabs.com.mx/">
+    
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="#0B0D11" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#FAFBFC" media="(prefers-color-scheme: light)">
+    
+    <!-- Performance & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons & Assets -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AK Labs">
+    <meta property="og:title" content="AK Labs — Diseño Web Premium México">
+    <meta property="og:description" content="Senior Software Engineer transformando negocios con sitios web premium que realmente convierten.">
+    <meta property="og:url" content="https://aklabs.com.mx/">
+    <meta property="og:image" content="https://aklabs.com.mx/assets/img/og-cover.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AK Labs — Diseño Web Premium México">
+    <meta name="twitter:description" content="Senior Software Engineer transformando negocios con sitios web premium.">
+    <meta name="twitter:image" content="https://aklabs.com.mx/assets/img/og-cover.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AK Labs",
+        "url": "https://aklabs.com.mx",
+        "logo": "https://aklabs.com.mx/assets/img/logo.svg",
+        "description": "Diseño web premium y desarrollo de vanguardia en México",
+        "founder": {
+            "@type": "Person",
+            "name": "AK",
+            "jobTitle": "Senior Software Engineer"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ciudad de México",
+            "addressRegion": "CDMX",
+            "addressCountry": "MX"
+        }
+    }
+    </script>
 </head>
 
-
-<body>
-  <!-- Enlace de salto (a11y) -->
-  <a class="sr-only" href="#main">Saltar al contenido</a>
-
-  <!-- Barra de progreso de scroll -->
-  <div id="progressbar" aria-hidden="true"><span class="progress__fill"></span></div>
-
-  <!-- Preloader -->
-  <div class="preloader" aria-hidden="true">
-    <div class="preloader__ring"></div>
-    <span class="sr-only">Cargando…</span>
-  </div>
-
-  <!-- NAV -->
-  <header class="nav" data-scrolled="false">
-    <div class="nav__inner container">
-      <a href="#home" class="nav__brand" aria-label="AK Labs — Inicio">
-        <img src="assets/img/logo.png" alt="AK Labs" class="logo" width="140" height="28" decoding="async" fetchpriority="high" />
-      </a>
-
-      <nav class="nav__links" aria-label="Navegación principal">
-        <a href="#servicios">Servicios</a>
-        <a href="#showcase">Showcase</a>
-        <a href="#proceso">Proceso</a>
-        <a href="#precios">Paquetes</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contacto" class="btn btn--primary">Cotiza</a>
-      </nav>
-
-      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+<body class="loading">
+    <!-- Skip Link -->
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    
+    <!-- Preloader -->
+    <div class="preloader" aria-hidden="true">
+        <div class="preloader__content">
+            <div class="logo-loader">
+                <svg viewBox="0 0 100 40" class="logo-svg">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#FF6B35"/>
+                            <stop offset="50%" stop-color="#F7931E"/>
+                            <stop offset="100%" stop-color="#FFD23F"/>
+                        </linearGradient>
+                    </defs>
+                    <text x="10" y="28" font-family="JetBrains Mono" font-weight="700" font-size="20" fill="url(#logoGrad)" class="logo-text">AK Labs</text>
+                </svg>
+            </div>
+            <div class="loading-dots">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
     </div>
-  </header>
-
-  <main id="main">
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="hero__bg" role="img" aria-label="Texturas de luz"></div>
-      <div class="hero__inner container">
-        <div class="hero__badge" data-reveal>Soluciones digitales</div>
-
-        <h1 class="hero__title" data-reveal data-reveal-delay="100">
-          <span class="txt-gradient">Diseño web profesional en México</span> que impulsa tu negocio
-        </h1>
-
-        <p class="hero__subtitle" data-reveal data-reveal-delay="200">
-          En AK Labs ofrecemos <strong>diseño web profesional en México</strong>, estrategia y
-          desarrollo para lanzar y escalar tu negocio. Sitios, apps y plataformas con experiencia
-          <em>premium</em>, arquitectura sólida y velocidad de entrega.
-        </p>
-
-        <div class="hero__cta" data-reveal data-reveal-delay="300">
-          <a href="#precios" class="btn btn--primary btn--magnetic">Cotiza diseño web profesional</a>
-          <a href="#showcase" class="btn btn--ghost">Ver casos</a>
-        </div>
-
-        <!-- halos decor -->
-        <div class="halo halo--1" aria-hidden="true"></div>
-        <div class="halo halo--2" aria-hidden="true"></div>
-      </div>
-    </section>
-
-    <!-- SERVICIOS -->
-    <section id="servicios" class="section">
-      <div class="container">
-        <header class="section__head" data-reveal>
-          <h2 class="section__title">Servicios de diseño web y desarrollo en México</h2>
-          <p class="section__desc">
-            Desde sitios ultra-eficientes hasta plataformas a la medida. Diseñamos, 
-            construimos y escalamos experiencias digitales con visión de producto.
-          </p>
-        </header>
-
-        <div class="grid grid--features">
-          <article class="card" data-reveal>
-            <h3>Landing / One-Page</h3>
-            <p>Impacto inmediato y conversión. Ideal para lanzamientos y campañas de alto retorno.</p>
-            <p><a href="#precios" class="inline-link">Precios de landing pages optimizadas SEO</a></p>
-          </article>
-
-          <article class="card" data-reveal data-reveal-delay="60">
-            <h3>Multipágina</h3>
-            <p>Arquitectura clara, navegación suave y SEO estratégico para crecer con tu marca.</p>
-            <p><a href="#precios" class="inline-link">Planes de diseño web profesional (multipágina)</a></p>
-          </article>
-
-          <article class="card" data-reveal data-reveal-delay="120">
-            <h3>E-commerce</h3>
-            <p>Catálogo, carrito y pagos integrados. Optimizado para vender sin fricción.</p>
-            <p><a href="#precios" class="inline-link">Paquetes de tienda en línea en México</a></p>
-          </article>
-
-          <article class="card" data-reveal data-reveal-delay="180">
-            <h3>Consultoría & Software</h3>
-            <p>Más allá de web: sistemas a medida, automatización y escalabilidad.</p>
-            <p><a href="#contacto" class="inline-link">Agenda consultoría de diseño y desarrollo web</a></p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SHOWCASE -->
-    <section id="showcase" class="section section--alt">
-      <div class="container">
-        <header class="section__head" data-reveal>
-          <h2 class="section__title">Proyectos de diseño web profesional en México</h2>
-          <p class="section__desc">Selección curada. Efecto tilt y lightbox nativo.</p>
-        </header>
-
-        <div class="grid grid--portfolio">
-          <figure class="work tilt" data-reveal>
-            <a href="https://adastrajuris.com.mx" target="_blank" rel="noopener noreferrer">
-              <img src="assets/img/work-1.jpg" 
-                  alt="Proyecto 1: rediseño con énfasis en conversión" 
-                  loading="lazy" width="640" height="480" />
-              <figcaption>Ad Astra Juris</figcaption>
-            </a>
-          </figure>
-          <figure class="work tilt" data-reveal>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              <img src="assets/img/underconstruction.jpg" 
-                  alt="Proyecto 1: rediseño con énfasis en conversión" 
-                  loading="lazy" width="640" height="480" />
-              <figcaption>Under Construction</figcaption>
-            </a>
-          </figure>
-          <figure class="work tilt" data-reveal>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              <img src="assets/img/underconstruction.jpg" 
-                  alt="Proyecto 1: rediseño con énfasis en conversión" 
-                  loading="lazy" width="640" height="480" />
-              <figcaption>Under Construction</figcaption>
-            </a>
-          </figure>
-          <figure class="work tilt" data-reveal>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              <img src="assets/img/underconstruction.jpg" 
-                  alt="Proyecto 1: rediseño con énfasis en conversión" 
-                  loading="lazy" width="640" height="480" />
-              <figcaption>Under Construction</figcaption>
-            </a>
-          </figure>
-        </div>
-      </div>
-
-      <dialog class="lightbox" id="lightbox" aria-label="Vista previa">
-        <button class="lightbox__close" aria-label="Cerrar">×</button>
-        <img src="" alt="Trabajo" />
-        <p class="lightbox__label"></p>
-      </dialog>
-    </section>
-
-    <!-- PROCESO -->
-    <section id="proceso" class="section process-roadmap">
-      <div class="container">
-        <header class="section__head" data-reveal>
-          <h2 class="section__title">Nuestro proceso de diseño web y desarrollo</h2>
-          <p class="section__desc">De la idea al impacto real: un roadmap diseñado para crecer sin límites.</p>
-        </header>
-
-        <div class="roadmap">
-          <div class="roadmap__track" aria-hidden="true"></div>
-
-          <ol class="stages" role="list">
-            <li class="stage" data-reveal>
-              <div class="stage__head">
-                <span class="badge">01</span>
-                <span class="pin" aria-hidden="true"></span>
-              </div>
-              <article class="card stage__card tilt">
-                <h3 class="stage__title"><i class="fa-solid fa-magnifying-glass"></i> Discovery & visión</h3>
-                <p>Entendemos tu negocio, mercado y usuarios. Objetivos claros y norte de la estrategia.</p>
-              </article>
-            </li>
-
-            <li class="stage" data-reveal data-reveal-delay="60">
-              <div class="stage__head">
-                <span class="badge">02</span>
-                <span class="pin" aria-hidden="true"></span>
-              </div>
-              <article class="card stage__card tilt">
-                <h3 class="stage__title"><i class="fa-solid fa-object-group"></i> Diseño & arquitectura</h3>
-                <p>Wireframes, sistema de UI y arquitectura pensada para escalar como producto.</p>
-              </article>
-            </li>
-
-            <li class="stage" data-reveal data-reveal-delay="120">
-              <div class="stage__head">
-                <span class="badge">03</span>
-                <span class="pin" aria-hidden="true"></span>
-              </div>
-              <article class="card stage__card tilt">
-                <h3 class="stage__title"><i class="fa-solid fa-code"></i> Desarrollo ágil</h3>
-                <p>Frontend y backend limpios y rápidos. QA multi-device, CI y pruebas reales.</p>
-              </article>
-            </li>
-
-            <li class="stage" data-reveal data-reveal-delay="180">
-              <div class="stage__head">
-                <span class="badge">04</span>
-                <span class="pin" aria-hidden="true"></span>
-              </div>
-              <article class="card stage__card tilt">
-                <h3 class="stage__title"><i class="fa-solid fa-rocket"></i> Deploy & performance</h3>
-                <p>Optimización SEO, seguridad y despliegue sin fricciones. Escalabilidad lista.</p>
-              </article>
-            </li>
-
-            <li class="stage" data-reveal data-reveal-delay="240">
-              <div class="stage__head">
-                <span class="badge">05</span>
-                <span class="pin" aria-hidden="true"></span>
-              </div>
-              <article class="card stage__card tilt">
-                <h3 class="stage__title"><i class="fa-solid fa-chart-line"></i> Iteración & growth</h3>
-                <p>Métricas, A/B testing y roadmap de evolución continua.</p>
-              </article>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRECIOS -->
-    <section id="precios" class="section section--alt">
-      <div class="container">
-        <header class="section__head" data-reveal>
-          <h2 class="section__title">Paquetes de diseño web profesional</h2>
-          <p class="section__desc">Transparente y sin letra chica. Incluye correos corporativos y opción de mantenimiento mensual.</p>
-        </header>
-
-        <div class="grid grid--pricing">
-          <article class="price" data-reveal>
-            <h3>One-Page</h3>
-            <p class="price__tag">$3,800 MXN</p>
-            <ul class="price__list">
-              <li>Sección única premium con diseño pro</li>
-              <li>3 cuentas de correo corporativo</li>
-              <li>SEO básico y velocidad optimizada</li>
-              <li>Dominio .com.mx incluido (1 año)</li>
-              <li><strong>Mantenimiento opcional: $300 MXN/mes</strong> (4 cambios básicos + soporte)</li>
-            </ul>
-            <a href="#contacto" class="btn btn--primary btn--magnetic">Elegir</a>
-          </article>
-
-          <article class="price price--highlight" data-reveal data-reveal-delay="80">
-            <h3>Multipágina</h3>
-            <p class="price__tag">$5,000 MXN</p>
-            <ul class="price__list">
-              <li>Hasta 5 páginas estratégicas</li>
-              <li>3 cuentas de correo incluidas</li>
-              <li>SEO base para escalar tráfico</li>
-              <li>Soporte técnico incluido</li>
-              <li><strong>Mantenimiento opcional: $600 MXN/mes</strong> (cambios + mejoras continuas)</li>
-            </ul>
-            <a href="#contacto" class="btn btn--primary btn--magnetic">Elegir</a>
-          </article>
-
-          <article class="price" data-reveal data-reveal-delay="160">
-            <h3>E-commerce</h3>
-            <p class="price__tag">$12,000 MXN</p>
-            <ul class="price__list">
-              <li>Catálogo administrable + carrito de compras</li>
-              <li>Pagos integrados y 100% seguros</li>
-              <li>Responsive full en todos los dispositivos</li>
-              <li>Soporte inicial premium</li>
-              <li><strong>Mantenimiento opcional: $1,200 MXN/mes</strong> (optimización + cambios ilimitados básicos)</li>
-            </ul>
-            <a href="#contacto" class="btn btn--primary btn--magnetic">Elegir</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIOS -->
-    <section id="testimonios" class="section">
-      <div class="container">
-        <header class="section__head" data-reveal>
-          <h2 class="section__title">Lo que dicen</h2>
-          <p class="section__desc">Casos reales, resultados medibles.</p>
-        </header>
-
-        <div class="slider" data-slider>
-          <button class="slider__btn slider__btn--prev" aria-label="Anterior">‹</button>
-
-          <div class="slider__track">
-            <div class="slide" data-reveal>
-              <blockquote>
-                “En menos de dos semanas el sitio empezó a generar citas de prospectos.
-                El despacho ganó claridad en el mensaje y ahora medimos cada contacto.”
-              </blockquote>
-              <cite>— Lic. Hugo E. González, Socio en Ad Astra Juris (Sector Legal)</cite>
-            </div>
-
-            <div class="slide" data-reveal data-reveal-delay="80">
-              <blockquote>
-                “La landing de campaña nos dio un CTR 2.1× y bajó el costo por lead 37%.
-                La implementación fue impecable.”
-              </blockquote>
-              <cite>— Sofía M., Marketing en retail moda</cite>
-            </div>
-
-            <div class="slide" data-reveal data-reveal-delay="160">
-              <blockquote>
-                “Nos entregaron una arquitectura clara y un SEO base que por fin posiciona
-                servicios clave. El equipo es serio y muy rápido.”
-              </blockquote>
-              <cite>— Daniel R., Director Operación B2B</cite>
-            </div>
-
-            <div class="slide" data-reveal data-reveal-delay="240">
-              <blockquote>
-                “Checkout sin fricción y velocidad real. Subimos 18% en conversión el primer mes
-                solo con performance y UX.”
-              </blockquote>
-              <cite>— Laura C., E-commerce Manager</cite>
-            </div>
-          </div>
-
-          <button class="slider__btn slider__btn--next" aria-label="Siguiente">›</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section section--alt">
-      <div class="container">
-        <header class="section__head" data-reveal>
-          <h2 class="section__title">FAQ</h2>
-          <p class="section__desc">Preguntas frecuentes que nos hacen clientes antes de dar el paso.</p>
-        </header>
-
-        <div class="faq">
-          <details class="reveal" data-reveal>
-            <summary>¿Qué cambios están incluidos?</summary>
-            <p>
-              En el plan One-Page puedes ajustar textos, imágenes y colores sin costo adicional. 
-              Cambios estructurales o nuevas secciones se cotizan de forma transparente.
-            </p>
-          </details>
-
-          <details class="reveal" data-reveal data-reveal-delay="80">
-            <summary>¿Necesito un hosting especial?</summary>
-            <p>
-              No. Nuestros sitios corren en hosting estándar con buenas prácticas de seguridad y
-              performance. No tienes de que preocuparte, tu sitio web ya viene con un ¡host incluido!
-            </p>
-          </details>
-
-          <details class="reveal" data-reveal data-reveal-delay="160">
-            <summary>¿Qué nivel de SEO ofrecen?</summary>
-            <p>
-              Entregamos un SEO técnico base: etiquetas, metadatos, estructura semántica y tiempos
-              de carga optimizados. Si buscas estrategias avanzadas, también ofrecemos planes
-              mensuales de posicionamiento.
-            </p>
-          </details>
-
-          <details class="reveal" data-reveal data-reveal-delay="240">
-            <summary>¿Pueden dar soporte continuo?</summary>
-            <p>
-              Sí. Contamos con planes de mantenimiento mensual (desde $300 MXN) que incluyen cambios
-              menores, monitoreo y soporte técnico para que tu web esté siempre arriba.
-            </p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="section">
-      <div class="container">
-        <header class="section__head" data-reveal>
-          <h2 class="section__title">Hablemos</h2>
-          <p class="section__desc">Cuéntanos de tu proyecto y te respondemos hoy.</p>
-        </header>
-
-        <form class="form" id="contactForm" method="POST" action="assets/php/contact.php" novalidate>
-          <!-- Honeypot -->
-          <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none">
-          <!-- (Opcional) CSRF -->
-          <input type="hidden" name="csrf_token" value="" />
-
-          <div class="form__row">
-            <label for="name">Nombre</label>
-            <input id="name" name="name" type="text" placeholder="Tu nombre" required />
-          </div>
-          <div class="form__row">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="tu@correo.com" required />
-          </div>
-          <div class="form__row">
-            <label for="msg">Mensaje</label>
-            <textarea id="msg" name="message" rows="5" placeholder="Cuéntanos en 3-4 líneas" required></textarea>
-          </div>
-          <button class="btn btn--primary btn--magnetic" type="submit">Enviar</button>
-          <p class="form__hint" id="formHint" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer" id="footer">
-    <div class="container footer__inner">
-      <p>© <span id="year"></span> AK Labs — Obsesión por el detalle.</p>
+    
+    <!-- Cursor -->
+    <div class="cursor" aria-hidden="true">
+        <div class="cursor__dot"></div>
+        <div class="cursor__circle"></div>
     </div>
-  </footer>
+    
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" aria-hidden="true">
+        <div class="scroll-progress__bar"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+        <div class="nav__container">
+            <div class="nav__brand">
+                <a href="#home" class="brand-logo" aria-label="AK Labs - Inicio">
+                    <svg viewBox="0 0 120 32" class="brand-svg">
+                        <defs>
+                            <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FF6B35"/>
+                                <stop offset="50%" stop-color="#F7931E"/>
+                                <stop offset="100%" stop-color="#FFD23F"/>
+                            </linearGradient>
+                        </defs>
+                        <text x="5" y="22" font-family="JetBrains Mono" font-weight="700" font-size="16" fill="url(#brandGrad)">AK Labs</text>
+                    </svg>
+                </a>
+            </div>
+            
+            <nav class="nav__menu" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Servicios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#process" class="nav__link">Proceso</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#pricing" class="nav__link">Precios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link nav__link--cta">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="nav__controls">
+                <button class="theme-toggle" aria-label="Cambiar tema" data-theme-toggle>
+                    <div class="theme-toggle__track">
+                        <div class="theme-toggle__thumb">
+                            <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="5" fill="currentColor"/>
+                                <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"/>
+                                <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"/>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"/>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"/>
+                                <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"/>
+                                <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"/>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"/>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24">
+                                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                
+                <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" data-nav-toggle>
+                    <div class="hamburger">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <div class="nav__backdrop" data-nav-backdrop></div>
+    </header>
 
-  <!-- FAB “Back to top” -->
-  <button id="backToTop" class="fab fab--top" aria-label="Volver arriba" title="Volver arriba" hidden>
-    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
-    <span class="sr-only">Volver arriba</span>
-  </button>
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero__bg">
+                <div class="gradient-mesh">
+                    <div class="gradient-mesh__orb gradient-mesh__orb--1"></div>
+                    <div class="gradient-mesh__orb gradient-mesh__orb--2"></div>
+                    <div class="gradient-mesh__orb gradient-mesh__orb--3"></div>
+                </div>
+                <div class="noise-texture"></div>
+            </div>
+            
+            <div class="hero__container">
+                <div class="hero__content">
+                    <div class="hero__badge" data-aos="fade-up">
+                        <span class="badge__dot"></span>
+                        <span class="badge__text">Senior Software Engineer • 12+ años</span>
+                    </div>
+                    
+                    <h1 class="hero__title" data-aos="fade-up" data-aos-delay="100">
+                        Creamos experiencias
+                        <span class="title__highlight">digitales</span>
+                        que <span class="title__highlight title__highlight--secondary">transforman</span> negocios
+                    </h1>
+                    
+                    <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Especialista en <strong>desarrollo web premium</strong> con enfoque en conversión. 
+                        Cada sitio web es una <em>máquina de generar resultados</em> diseñada para hacer 
+                        crecer tu negocio en el competitivo mercado mexicano.
+                    </p>
+                    
+                    <div class="hero__stats" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat">
+                            <span class="stat__number" data-counter="50">0</span>
+                            <span class="stat__label">Proyectos entregados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-counter="95">0</span>
+                            <span class="stat__label">% Satisfacción</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-counter="12">0</span>
+                            <span class="stat__label">Años experiencia</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero__actions" data-aos="fade-up" data-aos-delay="400">
+                        <a href="#portfolio" class="btn btn--primary btn--magnetic">
+                            <span class="btn__text">Ver Portfolio</span>
+                            <div class="btn__bg"></div>
+                            <svg class="btn__icon" viewBox="0 0 24 24">
+                                <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn--secondary">
+                            <span class="btn__text">Contactar Ahora</span>
+                            <div class="btn__bg"></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero__visual" data-aos="fade-left" data-aos-delay="500">
+                    <div class="floating-card floating-card--1">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="traffic-light">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="code-line">
+                                    <span class="code-tag">&lt;experience</span>
+                                    <span class="code-attr">years</span>=<span class="code-value">"12"</span>
+                                    <span class="code-tag">/&gt;</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="code-tag">&lt;expertise</span>
+                                    <span class="code-attr">level</span>=<span class="code-value">"senior"</span>
+                                    <span class="code-tag">/&gt;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-card floating-card--2">
+                        <div class="card-content">
+                            <div class="metric-card">
+                                <div class="metric-header">
+                                    <h4>Conversión</h4>
+                                    <span class="metric-trend">↗ +127%</span>
+                                </div>
+                                <div class="metric-chart">
+                                    <svg viewBox="0 0 100 40">
+                                        <polyline points="10,30 20,25 30,15 40,20 50,10 60,15 70,5 80,12 90,8" 
+                                                  fill="none" stroke="url(#chartGrad)" stroke-width="2"/>
+                                        <defs>
+                                            <linearGradient id="chartGrad">
+                                                <stop offset="0%" stop-color="#FF6B35"/>
+                                                <stop offset="100%" stop-color="#FFD23F"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-card floating-card--3">
+                        <div class="card-content">
+                            <div class="tech-stack">
+                                <div class="tech-item">React</div>
+                                <div class="tech-item">Node.js</div>
+                                <div class="tech-item">PHP</div>
+                                <div class="tech-item">MySQL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__scroll" data-aos="fade-up" data-aos-delay="600">
+                <div class="scroll-indicator">
+                    <div class="scroll-mouse">
+                        <div class="scroll-wheel"></div>
+                    </div>
+                    <span class="scroll-text">Descubre más</span>
+                </div>
+            </div>
+        </section>
 
-  <!-- FAB de Theme -->
-  <button id="themeFab" class="fab fab--theme" aria-label="Cambiar tema" title="Cambiar tema">
-    <i class="fa-solid fa-moon" aria-hidden="true"></i>
-    <span class="sr-only">Cambiar tema</span>
-  </button>
+        <!-- Services Section -->
+        <section id="services" class="section section--services">
+            <div class="section__container">
+                <header class="section__header" data-aos="fade-up">
+                    <span class="section__eyebrow">Servicios Premium</span>
+                    <h2 class="section__title">
+                        Soluciones que <span class="text-gradient">impulsan resultados</span>
+                    </h2>
+                    <p class="section__subtitle">
+                        Cada proyecto combina estrategia, diseño excepcional y desarrollo técnico 
+                        de clase mundial para maximizar tu ROI digital.
+                    </p>
+                </header>
+                
+                <div class="services-grid">
+                    <article class="service-card service-card--featured" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card__header">
+                            <div class="service-icon service-icon--landing">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-card__title">Landing Pages Premium</h3>
+                            <span class="service-card__badge">Más Popular</span>
+                        </div>
+                        <p class="service-card__description">
+                            Páginas de aterrizaje optimizadas para conversión máxima. 
+                            Diseño psicológico + copy estratégico = resultados medibles.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Conversión optimizada A/B tested</li>
+                            <li>Carga ultra-rápida (&lt;2s)</li>
+                            <li>Mobile-first responsive</li>
+                            <li>SEO técnico avanzado</li>
+                        </ul>
+                        <div class="service-card__price">
+                            <span class="price-from">Desde</span>
+                            <span class="price-amount">$4,500</span>
+                            <span class="price-currency">MXN</span>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card__header">
+                            <div class="service-icon service-icon--multipage">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="9" y1="9" x2="15" y2="9" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="9" y1="12" x2="15" y2="12" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="9" y1="15" x2="13" y2="15" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-card__title">Sitios Multipágina</h3>
+                        </div>
+                        <p class="service-card__description">
+                            Experiencias web completas con arquitectura escalable. 
+                            Perfect para empresas que buscan presencia digital robusta.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Hasta 8 páginas estratégicas</li>
+                            <li>CMS básico incluido</li>
+                            <li>Blog integrado</li>
+                            <li>Analytics configurado</li>
+                        </ul>
+                        <div class="service-card__price">
+                            <span class="price-from">Desde</span>
+                            <span class="price-amount">$8,500</span>
+                            <span class="price-currency">MXN</span>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card__header">
+                            <div class="service-icon service-icon--ecommerce">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="9" cy="21" r="1" fill="currentColor"/>
+                                    <circle cx="20" cy="21" r="1" fill="currentColor"/>
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" 
+                                          fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-card__title">E-commerce Avanzado</h3>
+                        </div>
+                        <p class="service-card__description">
+                            Tiendas online que venden 24/7. Integración completa de pagos, 
+                            inventario y marketing automation.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Pasarela de pagos segura</li>
+                            <li>Panel admin avanzado</li>
+                            <li>Email marketing</li>
+                            <li>Reportes detallados</li>
+                        </ul>
+                        <div class="service-card__price">
+                            <span class="price-from">Desde</span>
+                            <span class="price-amount">$18,000</span>
+                            <span class="price-currency">MXN</span>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card service-card--enterprise" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-card__header">
+                            <div class="service-icon service-icon--custom">
+                                <svg viewBox="0 0 24 24">
+                                    <polygon points="12,2 15.09,8.26 22,9 17,14.74 18.18,21.02 12,17.77 5.82,21.02 7,14.74 2,9 8.91,8.26 12,2" 
+                                             fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-card__title">Desarrollo a Medida</h3>
+                            <span class="service-card__badge service-card__badge--premium">Enterprise</span>
+                        </div>
+                        <p class="service-card__description">
+                            Aplicaciones web complejas y sistemas personalizados. 
+                            Para empresas con necesidades específicas y ambiciosas.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Arquitectura personalizada</li>
+                            <li>Integración APIs</li>
+                            <li>Escalabilidad enterprise</li>
+                            <li>Soporte técnico dedicado</li>
+                        </ul>
+                        <div class="service-card__price">
+                            <span class="price-from">Cotización</span>
+                            <span class="price-amount">Personalizada</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-  <!-- Librerías externas (solo notificaciones, si las usas) -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section section--portfolio">
+            <div class="section__container">
+                <header class="section__header" data-aos="fade-up">
+                    <span class="section__eyebrow">Portfolio Seleccionado</span>
+                    <h2 class="section__title">
+                        Proyectos que <span class="text-gradient">generan impacto</span>
+                    </h2>
+                    <p class="section__subtitle">
+                        Cada proyecto representa una historia de éxito. Desde startups hasta 
+                        empresas consolidadas, creamos soluciones que entregan resultados reales.
+                    </p>
+                </header>
+                
+                <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="100">
+                    <button class="filter-btn filter-btn--active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="landing">Landing Pages</button>
+                    <button class="filter-btn" data-filter="multipage">Multipágina</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                </div>
+                
+                <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="200">
+                    <article class="portfolio-item" data-category="landing multipage">
+                        <div class="portfolio-item__image">
+                            <img src="assets/img/work-1.jpg" alt="Ad Astra Juris - Firma legal" loading="lazy">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__actions">
+                                    <a href="https://saggarage.com.mx/" target="_blank" rel="noopener" class="btn btn--small">
+                                        <span>Ver Sitio</span>
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" 
+                                                  fill="none" stroke="currentColor" stroke-width="2"/>
+                                            <polyline points="15,3 21,3 21,9" fill="none" stroke="currentColor" stroke-width="2"/>
+                                            <line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <div class="portfolio-item__tags">
+                                <span class="tag">Landing Page</span>
+                                <span class="tag">Legal</span>
+                            </div>
+                            <h3 class="portfolio-item__title">Ad Astra Juris</h3>
+                            <p class="portfolio-item__description">
+                                Firma legal premium con enfoque en conversión de leads calificados.
+                            </p>
+                            <div class="portfolio-item__metrics">
+                                <div class="metric">
+                                    <span class="metric-value">+180%</span>
+                                    <span class="metric-label">Conversión</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">2.1s</span>
+                                    <span class="metric-label">Carga</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-item" data-category="landing">
+                        <div class="portfolio-item__image">
+                            <img src="assets/img/saggarage.png" alt="Sag Garage - Taller mecánico" loading="lazy">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__actions">
+                                    <a href="https://saggarage.com.mx/" target="_blank" rel="noopener" class="btn btn--small">
+                                        <span>Ver Sitio</span>
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" 
+                                                  fill="none" stroke="currentColor" stroke-width="2"/>
+                                            <polyline points="15,3 21,3 21,9" fill="none" stroke="currentColor" stroke-width="2"/>
+                                            <line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <div class="portfolio-item__tags">
+                                <span class="tag">One Page</span>
+                                <span class="tag">Automotive</span>
+                            </div>
+                            <h3 class="portfolio-item__title">Sag Garage</h3>
+                            <p class="portfolio-item__description">
+                                Taller mecánico especializado con sistema de citas online.
+                            </p>
+                            <div class="portfolio-item__metrics">
+                                <div class="metric">
+                                    <span class="metric-value">+85%</span>
+                                    <span class="metric-label">Citas</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">1.8s</span>
+                                    <span class="metric-label">Carga</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-item" data-category="multipage">
+                        <div class="portfolio-item__image">
+                            <img src="assets/img/grupo-yoma.webp" alt="Grupo Yoma - Empresa química" loading="lazy">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__actions">
+                                    <a href="https://grupoyoma.com.mx/" target="_blank" rel="noopener" class="btn btn--small">
+                                        <span>Ver Sitio</span>
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" 
+                                                  fill="none" stroke="currentColor" stroke-width="2"/>
+                                            <polyline points="15,3 21,3 21,9" fill="none" stroke="currentColor" stroke-width="2"/>
+                                            <line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <div class="portfolio-item__tags">
+                                <span class="tag">Multipágina</span>
+                                <span class="tag">Industrial</span>
+                            </div>
+                            <h3 class="portfolio-item__title">Grupo Yoma</h3>
+                            <p class="portfolio-item__description">
+                                Empresa química industrial con catálogo de productos avanzado.
+                            </p>
+                            <div class="portfolio-item__metrics">
+                                <div class="metric">
+                                    <span class="metric-value">+120%</span>
+                                    <span class="metric-label">Leads</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">2.3s</span>
+                                    <span class="metric-label">Carga</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-item" data-category="landing">
+                        <div class="portfolio-item__image">
+                            <img src="assets/img/underconstruction.jpg" alt="Próximo proyecto" loading="lazy">
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__actions">
+                                    <button class="btn btn--small" disabled>
+                                        <span>En Desarrollo</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <div class="portfolio-item__tags">
+                                <span class="tag">E-commerce</span>
+                                <span class="tag">Retail</span>
+                            </div>
+                            <h3 class="portfolio-item__title">Proyecto Premium</h3>
+                            <p class="portfolio-item__description">
+                                Tienda online con experiencia de usuario excepcional.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
+        <!-- Process Section -->
+        <section id="process" class="section section--process">
+            <div class="section__container">
+                <header class="section__header" data-aos="fade-up">
+                    <span class="section__eyebrow">Metodología Probada</span>
+                    <h2 class="section__title">
+                        Proceso que <span class="text-gradient">garantiza éxito</span>
+                    </h2>
+                    <p class="section__subtitle">
+                        12 años perfeccionando una metodología que combina agilidad, 
+                        calidad técnica y enfoque en resultados medibles.
+                    </p>
+                </header>
+                
+                <div class="process-timeline">
+                    <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+                        <div class="process-step__number">01</div>
+                        <div class="process-step__content">
+                            <div class="process-step__icon">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="11" cy="11" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M21 21l-4.35-4.35" fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="process-step__title">Discovery & Estrategia</h3>
+                            <p class="process-step__description">
+                                Análisis profundo de tu negocio, competencia y usuarios objetivo. 
+                                Definimos KPIs claros y estrategia de conversión.
+                            </p>
+                            <ul class="process-step__features">
+                                <li>Audit competitivo</li>
+                                <li>Definición de buyer personas</li>
+                                <li>Arquitectura de información</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-left" data-aos-delay="200">
+                        <div class="process-step__number">02</div>
+                        <div class="process-step__content">
+                            <div class="process-step__icon">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="8" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="12" y1="8" x2="12" y2="16" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="process-step__title">Diseño UX/UI</h3>
+                            <p class="process-step__description">
+                                Wireframes, prototipos interactivos y diseño visual que balancean 
+                                estética premium con usabilidad y conversión.
+                            </p>
+                            <ul class="process-step__features">
+                                <li>Wireframes de alta fidelidad</li>
+                                <li>Prototipo interactivo</li>
+                                <li>Sistema de design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-right" data-aos-delay="300">
+                        <div class="process-step__number">03</div>
+                        <div class="process-step__content">
+                            <div class="process-step__icon">
+                                <svg viewBox="0 0 24 24">
+                                    <polyline points="16,18 22,12 16,6" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <polyline points="8,6 2,12 8,18" fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="process-step__title">Desarrollo Premium</h3>
+                            <p class="process-step__description">
+                                Código limpio, performante y escalable. Testing exhaustivo 
+                                en múltiples dispositivos y navegadores.
+                            </p>
+                            <ul class="process-step__features">
+                                <li>Código semántico optimizado</li>
+                                <li>Performance &lt;3s carga</li>
+                                <li>Mobile-first responsive</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-left" data-aos-delay="400">
+                        <div class="process-step__number">04</div>
+                        <div class="process-step__content">
+                            <div class="process-step__icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="process-step__title">Lanzamiento & Optimización</h3>
+                            <p class="process-step__description">
+                                Deploy seguro, configuración de analytics y monitoreo continuo. 
+                                Optimización basada en datos reales.
+                            </p>
+                            <ul class="process-step__features">
+                                <li>Deploy sin downtime</li>
+                                <li>Analytics configurado</li>
+                                <li>Optimización continua</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- JS principal -->
-  <script src="assets/js/app.js" defer></script>
+        <!-- Pricing Section -->
+        <section id="pricing" class="section section--pricing">
+            <div class="section__container">
+                <header class="section__header" data-aos="fade-up">
+                    <span class="section__eyebrow">Inversión Transparente</span>
+                    <h2 class="section__title">
+                        Precios que <span class="text-gradient">generan ROI</span>
+                    </h2>
+                    <p class="section__subtitle">
+                        Inversión inteligente en tu presencia digital. Cada peso invertido 
+                        está diseñado para generar múltiples pesos de retorno.
+                    </p>
+                </header>
+                
+                <div class="pricing-toggle" data-aos="fade-up" data-aos-delay="100">
+                    <span class="pricing-toggle__label">Proyectos</span>
+                    <button class="pricing-toggle__switch" data-pricing-toggle>
+                        <span class="pricing-toggle__slider"></span>
+                    </button>
+                    <span class="pricing-toggle__label">
+                        Mantenimiento 
+                        <span class="pricing-toggle__badge">-20%</span>
+                    </span>
+                </div>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="pricing-card__header">
+                            <div class="pricing-card__icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3 class="pricing-card__title">Landing Page Premium</h3>
+                            <p class="pricing-card__description">
+                                Perfect para lanzamientos, campañas y validación de productos.
+                            </p>
+                        </div>
+                        
+                        <div class="pricing-card__price">
+                            <div class="price-display">
+                                <span class="currency">$</span>
+                                <span class="amount" data-price-project="4500" data-price-maintenance="450">4,500</span>
+                                <span class="period" data-period-project="MXN" data-period-maintenance="MXN/mes">MXN</span>
+                            </div>
+                        </div>
+                        
+                        <ul class="pricing-card__features">
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                Diseño conversion-focused
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                Performance ultra-rápida
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                3 cuentas email corporativo
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                SEO técnico optimizado
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                Dominio .com.mx (1 año)
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                Analytics configurado
+                            </li>
+                        </ul>
+                        
+                        <a href="#contact" class="btn btn--secondary btn--block">
+                            <span>Empezar Proyecto</span>
+                        </a>
+                    </div>
+                    
+                    <div class="pricing-card pricing-card--featured" data-aos="fade-up" data-aos-delay="200">
+                        <div class="pricing-card__badge">Más Popular</div>
+                        <div class="pricing-card__header">
+                            <div class="pricing-card__icon">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="9" y1="9" x2="15" y2="9" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="9" y1="12" x2="15" y2="12" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="9" y1="15" x2="13" y2="15" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="pricing-card__title">Sitio Multipágina</h3>
+                            <p class="pricing-card__description">
+                                Solución completa para empresas que buscan presencia digital robusta.
+                            </p>
+                        </div>
+                        
+                        <div class="pricing-card__price">
+                            <div class="price-display">
+                                <span class="currency">$</span>
+                                <span class="amount" data-price-project="8500" data-price-maintenance="750">8,500</span>
+                                <span class="period" data-period-project="MXN" data-period-maintenance="MXN/mes">MXN</span>
+                            </div>
+                        </div>
+                        
+                        <ul class="pricing-card__features">
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                Hasta 8 páginas estratégicas
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                CMS básico incluido
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                5 cuentas email corporativo
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                Blog integrado
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                SEO avanzado
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                Soporte técnico prioritario
+                            </li>
+                        </ul>
+                        
+                        <a href="#contact" class="btn btn--primary btn--block">
+                            <span>Empezar Proyecto</span>
+                        </a>
+                    </div>
+                    
+                    <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="pricing-card__header">
+                            <div class="pricing-card__icon">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="9" cy="21" r="1" fill="currentColor"/>
+                                    <circle cx="20" cy="21" r="1" fill="currentColor"/>
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" 
+                                          fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="pricing-card__title">E-commerce Premium</h3>
+                            <p class="pricing-card__description">
+                                Tienda online completa con todas las funcionalidades avanzadas.
+                            </p>
+                        </div>
+                        
+                        <div class="pricing-card__price">
+                            <div class="price-display">
+                                <span class="currency">$</span>
+                                <span class="amount" data-price-project="18000" data-price-maintenance="1600">18,000</span>
+                                <span class="period" data-period-project="MXN" data-period-maintenance="MXN/mes">MXN</span>
+                            </div>
+                        </div>
+                        
+                        <ul class="pricing-card__features">
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                Catálogo ilimitado
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                Pasarela de pagos segura
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                Panel admin avanzado
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                Email marketing integrado
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                Reportes detallados
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/></svg>
+                                Soporte dedicado 24/7
+                            </li>
+                        </ul>
+                        
+                        <a href="#contact" class="btn btn--secondary btn--block">
+                            <span>Empezar Proyecto</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="pricing-note" data-aos="fade-up" data-aos-delay="400">
+                    <p>
+                        <strong>Garantía de satisfacción 100%.</strong> Si no estás completamente satisfecho 
+                        con el resultado, trabajamos hasta que lo estés o te devolvemos tu inversión.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-  <!-- JSON-LD: Organization -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"AK Labs",
-    "url":"https://aklabs.com.mx/",
-    "logo":"https://aklabs.com.mx/assets/img/logo.png",
-    "sameAs":[
-      "https://www.facebook.com/aklabs",
-      "https://www.instagram.com/aklabs",
-      "https://www.linkedin.com/company/aklabs"
-    ]
-  }
-  </script>
+        <!-- Contact Section -->
+        <section id="contact" class="section section--contact">
+            <div class="section__container">
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <span class="section__eyebrow">Hablemos</span>
+                        <h2 class="section__title">
+                            Transformemos tu <span class="text-gradient">visión digital</span>
+                        </h2>
+                        <p class="section__subtitle">
+                            ¿Listo para llevar tu negocio al siguiente nivel? Conversemos sobre 
+                            tu proyecto y cómo podemos crear algo extraordinario juntos.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <a href="mailto:contacto@aklabs.com.mx" class="contact-method">
+                                <div class="contact-method__icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" 
+                                              fill="none" stroke="currentColor" stroke-width="2"/>
+                                        <polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-method__content">
+                                    <h4>Email</h4>
+                                    <span>contacto@aklabs.com.mx</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://wa.me/5215555555555" target="_blank" rel="noopener" class="contact-method">
+                                <div class="contact-method__icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" 
+                                              fill="none" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-method__content">
+                                    <h4>WhatsApp</h4>
+                                    <span>+52 1 55 5555 5555</span>
+                                </div>
+                            </a>
+                            
+                            <div class="contact-method">
+                                <div class="contact-method__icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                        <circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-method__content">
+                                    <h4>Ubicación</h4>
+                                    <span>Ciudad de México, México</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-availability">
+                            <div class="availability-indicator">
+                                <span class="availability-dot"></span>
+                                <span>Disponible para nuevos proyectos</span>
+                            </div>
+                            <p class="availability-note">
+                                Respuesta típica: <strong>2-4 horas</strong> en días hábiles
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" data-aos="fade-left" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre completo</label>
+                            <input type="text" id="name" name="name" class="form-input" required
+                                   placeholder="¿Cómo te llamas?">
+                            <span class="form-error" data-error="name"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required
+                                   placeholder="tu@email.com">
+                            <span class="form-error" data-error="email"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Teléfono (opcional)</label>
+                            <input type="tel" id="phone" name="phone" class="form-input"
+                                   placeholder="+52 55 1234 5678">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" class="form-label">Tipo de proyecto</label>
+                            <select id="service" name="service" class="form-select" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="landing">Landing Page Premium</option>
+                                <option value="multipage">Sitio Multipágina</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="custom">Desarrollo a Medida</option>
+                                <option value="consultation">Consultoría</option>
+                            </select>
+                            <span class="form-error" data-error="service"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Presupuesto aproximado</label>
+                            <select id="budget" name="budget" class="form-select">
+                                <option value="">Selecciona un rango</option>
+                                <option value="3000-6000">$3,000 - $6,000 MXN</option>
+                                <option value="6000-12000">$6,000 - $12,000 MXN</option>
+                                <option value="12000-25000">$12,000 - $25,000 MXN</option>
+                                <option value="25000+">$25,000+ MXN</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group form-group--full">
+                            <label for="message" class="form-label">Cuéntanos sobre tu proyecto</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required
+                                      placeholder="Describe tu visión, objetivos y cualquier detalle importante que debamos conocer..."></textarea>
+                            <span class="form-error" data-error="message"></span>
+                        </div>
+                        
+                        <div class="form-group form-group--checkbox">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">
+                                    Acepto la <a href="#" target="_blank">política de privacidad</a> 
+                                    y el tratamiento de mis datos para contacto comercial.
+                                </span>
+                            </label>
+                            <span class="form-error" data-error="privacy"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--block btn--submit">
+                            <span class="btn-text">Enviar Mensaje</span>
+                            <span class="btn-loading">
+                                <svg class="loading-spinner" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M14 2a10 10 0 0 0 0 20" fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                Enviando...
+                            </span>
+                        </button>
+                        
+                        <div class="form-success" data-success-message>
+                            <svg viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="22,4 12,14.01 9,11.01" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <h4>¡Mensaje enviado con éxito!</h4>
+                            <p>Gracias por tu interés. Te contactaremos en las próximas 2-4 horas.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <!-- JSON-LD: WebSite + SearchAction -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"WebSite",
-    "name":"AK Labs",
-    "url":"https://aklabs.com.mx/",
-    "potentialAction":{
-      "@type":"SearchAction",
-      "target":"https://aklabs.com.mx/?s={search_term_string}",
-      "query-input":"required name=search_term_string"
-    }
-  }
-  </script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <svg viewBox="0 0 120 32" class="footer-logo">
+                        <defs>
+                            <linearGradient id="footerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FF6B35"/>
+                                <stop offset="50%" stop-color="#F7931E"/>
+                                <stop offset="100%" stop-color="#FFD23F"/>
+                            </linearGradient>
+                        </defs>
+                        <text x="5" y="22" font-family="JetBrains Mono" font-weight="700" font-size="16" fill="url(#footerGrad)">AK Labs</text>
+                    </svg>
+                    <p class="footer__tagline">
+                        Transformando negocios con experiencias digitales excepcionales.
+                    </p>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Servicios</h4>
+                        <ul class="footer__list">
+                            <li><a href="#services">Landing Pages</a></li>
+                            <li><a href="#services">Sitios Multipágina</a></li>
+                            <li><a href="#services">E-commerce</a></li>
+                            <li><a href="#services">Desarrollo Custom</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Empresa</h4>
+                        <ul class="footer__list">
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#process">Proceso</a></li>
+                            <li><a href="#pricing">Precios</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Recursos</h4>
+                        <ul class="footer__list">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Guías</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Soporte</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p>&copy; <span id="currentYear">2026</span> AK Labs. Todos los derechos reservados.</p>
+                </div>
+                
+                <div class="footer__social">
+                    <a href="https://github.com/MarkiiAk" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="https://linkedin.com/in/aklabs" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="https://wa.me/5215555555555" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.06 3.488" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  <!-- JSON-LD: Breadcrumb -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"BreadcrumbList",
-    "itemListElement": [
-      { "@type":"ListItem","position":1,"name":"Inicio","item":"https://aklabs.com.mx/" },
-      { "@type":"ListItem","position":2,"name":"Servicios","item":"https://aklabs.com.mx/#servicios" },
-      { "@type":"ListItem","position":3,"name":"Paquetes","item":"https://aklabs.com.mx/#precios" },
-      { "@type":"ListItem","position":4,"name":"Contacto","item":"https://aklabs.com.mx/#contacto" }
-    ]
-  }
-  </script>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver al inicio">
+        <svg viewBox="0 0 24 24">
+            <path d="M12 19V6M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2"/>
+        </svg>
+    </button>
 
-  <!-- JSON-LD: FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"¿Qué cambios están incluidos?","acceptedAnswer":{"@type":"Answer","text":"En One-Page puedes ajustar textos, imágenes y colores sin costo. Estructura o nuevas secciones se cotizan aparte."}},
-      {"@type":"Question","name":"¿Necesito hosting especial?","acceptedAnswer":{"@type":"Answer","text":"No. Trabajamos con hosting estándar siguiendo buenas prácticas de seguridad y performance."}},
-      {"@type":"Question","name":"¿Qué nivel de SEO ofrecen?","acceptedAnswer":{"@type":"Answer","text":"SEO técnico base: metadatos, estructura semántica y tiempos de carga optimizados. También ofrecemos planes mensuales avanzados."}},
-      {"@type":"Question","name":"¿Tienen soporte continuo?","acceptedAnswer":{"@type":"Answer","text":"Sí, con planes de mantenimiento mensual desde $300 MXN: cambios menores, monitoreo y soporte."}}
-    ]
-  }
-  </script>
-
-  <!-- JSON-LD: ItemList (Paquetes) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "name":"Paquetes AK Labs",
-    "itemListElement":[
-      {
-        "@type":"Product",
-        "position":1,
-        "name":"One-Page",
-        "description":"Sección única premium, 3 correos corporativos, SEO básico, dominio .com.mx 1 año.",
-        "brand":{"@type":"Brand","name":"AK Labs"},
-        "offers":{"@type":"Offer","price":"3800","priceCurrency":"MXN","availability":"https://schema.org/InStock","url":"https://aklabs.com.mx/#precios"},
-        "additionalProperty":[{"@type":"PropertyValue","name":"Mantenimiento mensual","value":"$300 MXN/mes"}]
-      },
-      {
-        "@type":"Product",
-        "position":2,
-        "name":"Multipágina",
-        "description":"Hasta 5 páginas, 3 correos, SEO base y soporte técnico.",
-        "brand":{"@type":"Brand","name":"AK Labs"},
-        "offers":{"@type":"Offer","price":"5000","priceCurrency":"MXN","availability":"https://schema.org/InStock","url":"https://aklabs.com.mx/#precios"},
-        "additionalProperty":[{"@type":"PropertyValue","name":"Mantenimiento mensual","value":"$600 MXN/mes"}]
-      },
-      {
-        "@type":"Product",
-        "position":3,
-        "name":"E-commerce",
-        "description":"Catálogo administrable, carrito y pagos integrados, responsive full.",
-        "brand":{"@type":"Brand","name":"AK Labs"},
-        "offers":{"@type":"Offer","price":"12000","priceCurrency":"MXN","availability":"https://schema.org/InStock","url":"https://aklabs.com.mx/#precios"},
-        "additionalProperty":[{"@type":"PropertyValue","name":"Mantenimiento mensual","value":"$1,200 MXN/mes"}]
-      }
-    ]
-  }
-  </script>
-
-  <!-- JSON-LD: Review real -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Review",
-    "itemReviewed":{"@type":"Organization","name":"AK Labs"},
-    "author":{"@type":"Person","name":"Lic. Hugo E. González"},
-    "reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},
-    "reviewBody":"En menos de dos semanas el sitio empezó a generar citas de prospectos. Mensaje claro y medición de cada contacto."
-  }
-  </script>
-
-  <!-- JSON-LD: Service (ejemplo aterrizable) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Service",
-    "name":"Landing Page de alto rendimiento",
-    "serviceType":"Web Design",
-    "provider":{"@type":"Organization","name":"AK Labs","url":"https://aklabs.com.mx/"},
-    "areaServed":{"@type":"Country","name":"México"},
-    "offers":{"@type":"Offer","priceCurrency":"MXN","price":"3800","url":"https://aklabs.com.mx/servicios/landing-page/","availability":"https://schema.org/InStock"},
-    "description":"Landings optimizadas para conversión con SEO técnico y analítica."
-  }
-  </script>
+    <!-- Scripts -->
+    <script src="assets/js/app.js" defer></script>
+    
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50
+        });
+    </script>
 </body>
 </html>
